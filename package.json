@@ -1,0 +1,51 @@
+{
+  "name": "dev-doc",
+  "version": "0.0.0",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "docs"
+    ],
+    "nohoist": [
+      "**/html-minifier-terser"
+    ]
+  },
+  "scripts": {
+    "docusaurus": "docusaurus",
+    "start": "docusaurus start",
+    "build": "docusaurus build",
+    "swizzle": "docusaurus swizzle",
+    "deploy": "docusaurus deploy",
+    "serve": "docusaurus serve",
+    "clear": "docusaurus clear"
+  },
+  "dependencies": {
+    "@aldridged/docusaurus-plugin-lunr": "^1.0.0-alpha.10",
+    "@cmfcmf/docusaurus-search-local": "^0.5.0",
+    "@docusaurus/core": "2.0.0-alpha.70",
+    "@docusaurus/preset-classic": "2.0.0-alpha.70",
+    "@docusaurus/theme-bootstrap": "^2.0.0-alpha.72",
+    "@docusaurus/theme-live-codeblock": "^2.0.0-alpha.71",
+    "@easyops-cn/docusaurus-search-local": "^0.16.1",
+    "@mdx-js/react": "^1.6.21",
+    "clsx": "^1.1.1",
+    "docusaurus-plugin-sass": "^0.1.12",
+    "lodash": "4.17.21",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "ssri": "8.0.1",
+    "trim": "0.0.3"
+  },
+  "browserslist": {
+    "production": [
+      ">0.5%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
