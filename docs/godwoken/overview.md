@@ -319,7 +319,7 @@ The following tools need to be installed before entering the deployment process:
 
 * [Tippy](https://github.com/nervosnetwork/tippy/releases)
 
-  Tippy is a tool to help set up and manage CKB nodes. For more information, see [Install a CKB Node by Using Tippy](https://cryptape.github.io/lumos-doc/docs/reference/ckbnode#install-a-ckb-node-by-using-tippy). The verified Tippy version in this documentation is [v0.3.2](https://github.com/nervosnetwork/tippy/releases/tag/v0.3.2).
+  Tippy is a tool to help set up and manage CKB nodes. For more information, see [Install a CKB Node by Using Tippy](/docs/lumos/reference/ckbnode#install-a-ckb-node-by-using-tippy). The verified Tippy version in this documentation is [v0.3.2](https://github.com/nervosnetwork/tippy/releases/tag/v0.3.2).
 
 * ckb-cli: The ckb-cli tool is used for deploying smart contracts. It can be installed from a [CKB prebuilt installer package](https://github.com/nervosnetwork/ckb/releases). The verified ckb-cli version in this documentation is [v0.42.0](https://github.com/nervosnetwork/ckb/releases/tag/v0.42.0).
 
@@ -333,7 +333,7 @@ The current user must have permissions to run ckb-cli, Capsule, Moleculec and do
 
 1. Create a CKB account for the deployment.
 
-   The account must have enough CKB capacity for the deployment.  For more information about CKB accounts and creating CKB accounts, see [CKB Accounts and Capacity](https://cryptape.github.io/lumos-doc/docs/reference/ckbaccount).
+   The account must have enough CKB capacity for the deployment.  For more information about CKB accounts and creating CKB accounts, see [CKB Accounts and Capacity](/docs/lumos/reference/ckbaccount).
 
    Example:
 
@@ -514,7 +514,7 @@ The current user must have permissions to run ckb-cli, Capsule, Moleculec and do
    $ LUMOS_CONFIG_FILE=~/config.json node ./packages/tools/lib/account-cli.js deposit -c 40000000000 -p 0xca02cc4b8e0e447e243204dd2e16a1692026bfdd4add502b203975999d3a6909
    ```
 
-   For more information about generating the Lumos config file for DEV chain, see [Generate the config.json file for the DEV chain](https://cryptape.github.io/lumos-doc/docs/guides/config#step-1-generate-the-configjson-file-for-the-dev-chain).
+   For more information about generating the Lumos config file for DEV chain, see [Generate the config.json file for the DEV chain](/docs/lumos/guides/config#step-1-generate-the-configjson-file-for-the-dev-chain).
 
 9. Start the web3 server.
 
@@ -568,7 +568,7 @@ The current user must have permissions to run ckb-cli, Capsule, Moleculec and do
 
 2. Choose Godwoken testnet or mainnet network or deploy a local Godwoken network.
 
-   For more information about Godwoken networks, see [Godwoken Networks](../introduction/godwoken#godwoken-networks).
+   For more information about Godwoken networks, see <Link to={useBaseUrl('/docs/godwoken/godwoken#godwoken-networks')}>Godwoken Networks</Link>.
 
    For more information about deploying a Godwoken network, see the sections of Deployment.
 

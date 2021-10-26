@@ -19,10 +19,10 @@ import TabItem from '@theme/TabItem';
     {label: 'Pre-defined Configurations', value: 'configname'},
     {label: 'A Local Configuration File', value: 'congfile'},
   ]}>
-<TabItem value="configname">  <p><ul><li>The <var>LUMOS_CONFIG_NAME</var> variable can take the <code>LINA</code> value to launch the DApp with the pre-defined configurations of the <b>Mainnet</b> network.</li><li>The <var>LUMOS_CONFIG_NAME</var> variable can take the <code>AGGRON4</code> value to launch the DApp with the pre-defined configurations of the <b>Testnet</b> network.</li></ul></p><p>For more information, see <Link to={useBaseUrl('/docs/guides/config#set-up-the-config-manager-by-using-pre-defined-configurations')}>Set Up the Config Manager by Using Pre-defined Configurations</Link>.</p>
+<TabItem value="configname">  <p><ul><li>The <var>LUMOS_CONFIG_NAME</var> variable can take the <code>LINA</code> value to launch the DApp with the pre-defined configurations of the <b>Mainnet</b> network.</li><li>The <var>LUMOS_CONFIG_NAME</var> variable can take the <code>AGGRON4</code> value to launch the DApp with the pre-defined configurations of the <b>Testnet</b> network.</li></ul></p><p>For more information, see <Link to={useBaseUrl('/docs/lumos/guides/config#set-up-the-config-manager-by-using-pre-defined-configurations')}>Set Up the Config Manager by Using Pre-defined Configurations</Link>.</p>
 
 </TabItem>
-    <TabItem value="congfile"><p>The <var>LUMOS_CONFIG_FILE</var> variable can take the value of a local config file name, for example, <var>config.json</var>, to launch the DApp with the configurations of <b>DEV chain</b>.</p><p>For more information, see <Link to={useBaseUrl('/docs/guides/config#set-up-the-config-manager-by-using-a-local-config-file')}>Set Up the Config Manager by Using a Local Config File</Link>.</p>
+    <TabItem value="congfile"><p>The <var>LUMOS_CONFIG_FILE</var> variable can take the value of a local config file name, for example, <var>config.json</var>, to launch the DApp with the configurations of <b>DEV chain</b>.</p><p>For more information, see <Link to={useBaseUrl('/docs/lumos/guides/config#set-up-the-config-manager-by-using-a-local-config-file')}>Set Up the Config Manager by Using a Local Config File</Link>.</p>
 
 </TabItem>
 </Tabs>
@@ -33,11 +33,11 @@ The following prerequisites apply for setting up the config manager:
 
 - The development environment is set up.
 
-  For more information, see <Link to={useBaseUrl('/docs/preparation/setupsystem')}>Set Up the Development Environment</Link>.
+  For more information, see <Link to={useBaseUrl('/docs/lumos/preparation/setupsystem')}>Set Up the Development Environment</Link>.
 
 - The `@ckb-lumos/config-manager` package is installed.
 
-  For more information about how to install a Lumos package, see <Link to={useBaseUrl('/docs/guides/installlumos')}>Install Lumos Packages</Link>.
+  For more information about how to install a Lumos package, see <Link to={useBaseUrl('/docs/lumos/guides/installlumos')}>Install Lumos Packages</Link>.
 
 ## Set Up the Config Manager by Using Pre-defined Configurations
 

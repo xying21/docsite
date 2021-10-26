@@ -47,7 +47,7 @@ The following prerequisites apply for setting up the Lumos indexer:
 
 - The development environment is set up. 
 
-  For more information, see <Link to={useBaseUrl('/docs/preparation/setupsystem')}>Set Up the Development Environment</Link>.
+  For more information, see <Link to={useBaseUrl('/docs/lumos/preparation/setupsystem')}>Set Up the Development Environment</Link>.
 
 ## Environment
 

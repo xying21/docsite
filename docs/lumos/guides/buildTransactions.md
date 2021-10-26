@@ -38,8 +38,8 @@ The DApp can assemble a transaction in the following steps:
 
 The following prerequisites apply for the examples in this guide:
 
-- The development environment is set up. For more information, see <Link to={useBaseUrl('/docs/preparation/setupsystem')}>Set Up the Development Environment</Link>.
-- The Lumos packages are installed. For more information, see <Link to={useBaseUrl('/docs/guides/installlumos')}>Install Lumos Packages</Link>.
+- The development environment is set up. For more information, see <Link to={useBaseUrl('/docs/lumos/preparation/setupsystem')}>Set Up the Development Environment</Link>.
+- The Lumos packages are installed. For more information, see <Link to={useBaseUrl('/docs/lumos/guides/installlumos')}>Install Lumos Packages</Link>.
 
 ## Environment
 
@@ -963,7 +963,7 @@ The transaction hash is 0x60db4b0dc2e21632a035c021ad05a56e80fd2d50aeb3d9e00aa554
 
 :::note
 
-The SUDT script needs to be deployed to DEV chain before operating on SUDT tokens. For more information about deploying the SUDT script, see [Write a SUDT script by Capsule](https://docs.nervos.org/docs/labs/sudtbycapsule). You can also refer to the <Link to={useBaseUrl('/docs/guides/integratenft#deploy-the-nft-script-on-dev-chain')}>Deploy the NFT Script on DEV Chain</Link> example for details about deploying a script on DEV chain.
+The SUDT script needs to be deployed to DEV chain before operating on SUDT tokens. For more information about deploying the SUDT script, see [Write a SUDT script by Capsule](https://docs.nervos.org/docs/labs/sudtbycapsule). You can also refer to the <Link to={useBaseUrl('/docs/lumos/guides/integratenft#deploy-the-nft-script-on-dev-chain')}>Deploy the NFT Script on DEV Chain</Link> example for details about deploying a script on DEV chain.
 
 :::
 

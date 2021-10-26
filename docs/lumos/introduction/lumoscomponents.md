@@ -24,7 +24,7 @@ The **base**, **helpers** and **config manager** components serve as helpers tha
 
   When a configuration file is loaded, the config manager processes the chain specific logic, sparing the corresponding coding work for configuration management.
 
-  For more information, see <Link to={useBaseUrl('/docs/guides/config')}>Set Up the Config Manager</Link>.
+  For more information, see <Link to={useBaseUrl('/docs/lumos/guides/config')}>Set Up the Config Manager</Link>.
 
 ## Cell Provider
 
@@ -34,7 +34,7 @@ The **Lumos indexer** or **transaction manager** component can be used as a cell
 
 - **Lumos indexer**: The Lumos indexer (`@ckb-lumos/indexer` and `@ckb-lumos/sql-indexer`) is a CKB cell indexer that fulfills the [Index-Query-Assemble](https://docs.nervos.org/docs/reference/cell#index-query-assemble-pattern) pattern. The Lumos indexer indexes cells and maintains a local database of the cells that provides an optimal way for querying cells.
 
-  For more information, see <Link to={useBaseUrl('/docs/guides/indexer')}>Set Up the Lumos Indexer</Link>.
+  For more information, see <Link to={useBaseUrl('/docs/lumos/guides/indexer')}>Set Up the Lumos Indexer</Link>.
 
 - **Transaction manager**: The transaction manager (`@ckb-lumos/transaction-manager`) can serve as an optional cell provider that enables the output cells of pending transactions to be usable for assembling new transactions.
 
@@ -57,4 +57,4 @@ The CKB DApp acts primarily as a transaction generator, generating transactions 
 
 - **HD wallet manager**: The HD wallet manager (`@ckb-lumos/hd`) supports *mnemonic* and *keystore* that are compatible with `Neuron` and `ckb-cli`. 
 
-For information about the installation of Lumos components (packages), see <Link to={useBaseUrl('/docs/guides/installlumos')}>Install Lumos Packages</Link>. <!--For the projects that have already listed Lumos packages as dependencies, just run `yarn install` in the projects directly to install the packages.--> 
+For information about the installation of Lumos components (packages), see <Link to={useBaseUrl('/docs/lumos/guides/installlumos')}>Install Lumos Packages</Link>. <!--For the projects that have already listed Lumos packages as dependencies, just run `yarn install` in the projects directly to install the packages.--> 

@@ -10,7 +10,7 @@ The Hello Lumos example is designed as a simple "DApp" that implemented the most
 
 You can follow the steps in this guide to perform a common transfer with the functions provided by the Hello Lumos "DApp".
 
-The later sections of the guide, for example, <Link to={useBaseUrl('/docs/guides/querycells')}>Query on Cells</Link>, <Link to={useBaseUrl('/docs/guides/querytransactions')}>Query on Transactions</Link>, and <Link to={useBaseUrl('/docs/guides/buildtransactions')}>Assemble Transactions</Link>, explain the usage of Lumos by using the code examples of Hello Lumos. The full code of the example can be found [here](https://github.com/xying21/hellolumos). 
+The later sections of the guide, for example, <Link to={useBaseUrl('/docs/lumos/guides/querycells')}>Query on Cells</Link>, <Link to={useBaseUrl('/docs/lumos/guides/querytransactions')}>Query on Transactions</Link>, and <Link to={useBaseUrl('/docs/lumos/guides/buildtransactions')}>Assemble Transactions</Link>, explain the usage of Lumos by using the code examples of Hello Lumos. The full code of the example can be found [here](https://github.com/xying21/hellolumos). 
 
 The  example has the following structure:
 
@@ -28,16 +28,12 @@ hellolumos/
 └── yarn.lock
 ```
 
-<!--The query functions on cells and transactions are all facilitated based on the Lumos framework. For more information, see [Query on Cells](../tutorials/querycells) and [Query on Transactions](../tutorials/querytransactions).-->
-
-<!--The <u>buildTXs.ts</u> file implements several sample functions by utilizing Lumos utilities for assembling common transfer transactions, Nervos DAO transactions, and locktime pool transfer transactions. For more information, see [Assemble Transactions](../tutorials/buildtransactions).-->
-
 ## Prerequisites
 
 The following prerequisites apply for walking through the Hello Lumos example:
 
-- The development environment is set up. For more information, see <Link to={useBaseUrl('/docs/preparation/setupsystem')}>Set Up the Development Environment</Link>.
-- Two accounts, Alice and Bob, have been created. Alice is specified as the miner to receive mining rewards. For more information, see <Link to={useBaseUrl('/docs/preparation/createaccount')}>Create Accounts</Link>.
+- The development environment is set up. For more information, see <Link to={useBaseUrl('/docs/lumos/preparation/setupsystem')}>Set Up the Development Environment</Link>.
+- Two accounts, Alice and Bob, have been created. Alice is specified as the miner to receive mining rewards. For more information, see <Link to={useBaseUrl('/docs/lumos/preparation/createaccount')}>Create Accounts</Link>.
 
 ## Environment
 
@@ -58,7 +54,7 @@ All required dependencies for the Hello Lumos example are listed in package.json
 
 :::note
 
-The development environment must be set up correctly for successful installation of the dependencies. For more information, see <Link to={useBaseUrl('/docs/preparation/setupsystem')}>Set Up the Development Environment</Link>.
+The development environment must be set up correctly for successful installation of the dependencies. For more information, see <Link to={useBaseUrl('/docs/lumos/preparation/setupsystem')}>Set Up the Development Environment</Link>.
 
 :::
 
@@ -88,7 +84,7 @@ Done in 52.70s.
 
 Replace the value of `PRIVATE_KEY`, `ADDRESS` and `ARGS` for ALICE and BOB in the `accounts.ts` file with the account information you have prepared when creating accounts.
 
-You can retrieve the `ADDRESS` and `ARGS` for ALICE and BOB by executing the `ckb-cli account list` command. The private keys are stored in the <var>alice</var> file and the <var>bob</var> file during the creation of the accounts. For more information about creating accounts, see <Link to={useBaseUrl('/docs/preparation/createaccount')}>Create Accounts</Link>.
+You can retrieve the `ADDRESS` and `ARGS` for ALICE and BOB by executing the `ckb-cli account list` command. The private keys are stored in the <var>alice</var> file and the <var>bob</var> file during the creation of the accounts. For more information about creating accounts, see <Link to={useBaseUrl('/docs/lumos/preparation/createaccount')}>Create Accounts</Link>.
 
 :::note
 
@@ -137,7 +133,7 @@ The server is started.
 
 ### Perform a common transfer transaction.
 
-The Hello Lumos example implements the common transfer transaction function by using Lumos modules and functions. For more information about building a common transaction by using Lumos, see <Link to={useBaseUrl('/docs/guides/buildtransactions#transfer-ckb-in-a-common-transaction')}>Transfer CKB in a Common Transaction</Link>.
+The Hello Lumos example implements the common transfer transaction function by using Lumos modules and functions. For more information about building a common transaction by using Lumos, see <Link to={useBaseUrl('/docs/lumos/guides/buildtransactions#transfer-ckb-in-a-common-transaction')}>Transfer CKB in a Common Transaction</Link>.
 
 1. Get the account information of Alice and Bob.
 
@@ -175,7 +171,7 @@ The Hello Lumos example implements the common transfer transaction function by u
 
    :::
 
-   For more information about getting transaction information by using Lumos, see <Link to={useBaseUrl('/docs/guides/querytransactions#get-transaction-status-and-block-hash')}>Get Transaction Status and Block Hash</Link>. 
+   For more information about getting transaction information by using Lumos, see <Link to={useBaseUrl('/docs/lumos/guides/querytransactions#get-transaction-status-and-block-hash')}>Get Transaction Status and Block Hash</Link>. 
 
    ```javascript {1}
    > await querytransactions.getTXbyHash("0x22cc789bdaa8e021caa303cf20cfa4063b46a17abd62b31aa2cf712844f984cb");
@@ -187,7 +183,7 @@ The Hello Lumos example implements the common transfer transaction function by u
 
    When the transaction is committed, the new balance appears in the result.
 
-   For more information about getting balance by a lock script, see <Link to={useBaseUrl('/docs/guides/querycapacity#get-the-balance-of-an-account')}>Get the Balance of an Account</Link>.
+   For more information about getting balance by a lock script, see <Link to={useBaseUrl('/docs/lumos/guides/querycapacity#get-the-balance-of-an-account')}>Get the Balance of an Account</Link>.
 
    ```javascript {1}
    > await querycells.getBalancebyLock(script2);

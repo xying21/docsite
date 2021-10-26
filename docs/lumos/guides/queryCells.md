@@ -48,7 +48,7 @@ Lumos supports query options on cells, including <var>lock</var>, <var>type</var
 
 - <var>type</var>: A type script or a ScriptWrapper of a type script.
 
-  For more information about [ScriptWrapper](https://nervosnetwork.github.io/lumos/interfaces/base.scriptwrapper.html), see <Link to={useBaseUrl('/docs/guides/querycells#fine-grained-query-for-cells')}>Fine-grained Query for Cells</Link>.
+  For more information about [ScriptWrapper](https://nervosnetwork.github.io/lumos/interfaces/base.scriptwrapper.html), see <Link to={useBaseUrl('/docs/lumos/guides/querycells#fine-grained-query-for-cells')}>Fine-grained Query for Cells</Link>.
 
 - <var>argsLen</var>: The lock or type args length. The default value of <var>argsLen</var> is -1 for the query on a full slice of the args.
 
@@ -66,8 +66,8 @@ Lumos supports query options on cells, including <var>lock</var>, <var>type</var
 
 The following prerequisites apply for the examples of this guide:
 
-- The development environment is set up. For more information, see <Link to={useBaseUrl('/docs/preparation/setupsystem')}>Set Up the Development Environment</Link>.
-- The Lumos packages are installed. For more information, see <Link to={useBaseUrl('/docs/guides/installlumos')}>Install Lumos Packages</Link>.
+- The development environment is set up. For more information, see <Link to={useBaseUrl('/docs/lumos/preparation/setupsystem')}>Set Up the Development Environment</Link>.
+- The Lumos packages are installed. For more information, see <Link to={useBaseUrl('/docs/lumos/guides/installlumos')}>Install Lumos Packages</Link>.
 
 ## Environment
 
@@ -96,7 +96,7 @@ export const findCellsbyLock = async (lockScript: Script): Promise<Cell[]> => {
 };
 ```
 
-The `INDEXER` of the example is a RockDB backed indexer that is initialized and started in the <var>hellolumos/src/index.ts</var> file. For more information about setting up the Lumos indexer, see <Link to={useBaseUrl('/docs/guides/indexer#set-up-the-rocksdb-backed-indexer')}>Set Up the RocksDB Backed Indexer</Link>.
+The `INDEXER` of the example is a RockDB backed indexer that is initialized and started in the <var>hellolumos/src/index.ts</var> file. For more information about setting up the Lumos indexer, see <Link to={useBaseUrl('/docs/lumos/guides/indexer#set-up-the-rocksdb-backed-indexer')}>Set Up the RocksDB Backed Indexer</Link>.
 
 Try the `findCellsbyLock` function in the Node.js REPL mode:
 
@@ -709,4 +709,4 @@ export async function locktimePoolCells(frominfo: string): Promise<Cell[]> {
 }
 ```
 
-For more information, see the <Link to={useBaseUrl('/docs/guides/buildtransactions#transfer-ckb-with-locktime-pool')}>Transfer CKB with Locktime Pool</Link> example.
+For more information, see the <Link to={useBaseUrl('/docs/lumos/guides/buildtransactions#transfer-ckb-with-locktime-pool')}>Transfer CKB with Locktime Pool</Link> example.

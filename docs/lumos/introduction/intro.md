@@ -17,7 +17,7 @@ Based on [the CKB programming model](https://github.com/nervosnetwork/rfcs/blob/
 
 Applications that run in the Node.js environment and that serve as the ***off-chain computation*** part can be developed on top of Lumos. The DApp built upon Lumos polls the block information from the CKB network, indexes cells locally, and provides the cells for queries and transactions corresponding to user requests.
 
-For more information, see <Link to={useBaseUrl('/docs/introduction/lumoscomponents')}>Lumos Components</Link>.
+For more information, see <Link to={useBaseUrl('/docs/lumos/introduction/lumoscomponents')}>Lumos Components</Link>.
 
 <img src={useBaseUrl("img/how.svg")}  width="70%"/>
 

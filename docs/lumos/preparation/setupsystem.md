@@ -89,7 +89,7 @@ For more information, see the instructions of <a href="https://github.com/nodejs
 
 **Tippy** is a tool to help set up and manage CKB nodes. It can install and start running a CKB node by one simple click. **DEV chain** is the recommended network for the later examples and CKB starters. 
 
-For more information about the concepts of CKB nodes, CKB networks, and the methods to install a CKB node, see <Link to={useBaseUrl('/docs/reference/ckbnode')}>CKB Nodes and Networks</Link>.
+For more information about the concepts of CKB nodes, CKB networks, and the methods to install a CKB node, see <Link to={useBaseUrl('/docs/lumos/reference/ckbnode')}>CKB Nodes and Networks</Link>.
 
 <Tabs
   defaultValue="ubuntu"

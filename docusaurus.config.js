@@ -1,13 +1,13 @@
 module.exports = {
   title: 'Learn & Develop for Nervos CKB',
   tagline: 'Documentation Site for Developer Tools',
-  url: 'https://github.com/xying21/dev',
-  baseUrl: '/dev/',
+  url: 'https://github.com/xying21/docsite',
+  baseUrl: '/docsite/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'xying21', // Usually your GitHub org/user name.
-  projectName: 'dev', // Usually your repo name.
+  projectName: 'docsite', // Usually your repo name.
 
   plugins: ['docusaurus-plugin-sass' ],
   
@@ -84,13 +84,10 @@ module.exports = {
         {
           title: 'About',
           items: [
-            {
-              label: 'About This Guide',
-              to: 'docs/introduction/about',
-            },
+
             {
               label: 'What is Lumos?',
-              to: 'docs/introduction/intro',
+              to: 'docs/lumos/introduction/intro',
             },
           ],
         },
@@ -99,11 +96,11 @@ module.exports = {
           items: [
             {
               label: 'Set Up the Development Environment',
-              to: 'docs/preparation/setupsystem',
+              to: 'docs/lumos/preparation/setupsystem',
             },
             {
               label: 'Install Lumos Packages',
-              to: 'docs/guides/installlumos',
+              to: 'docs/lumos/guides/installlumos',
             }
           ],
         },
@@ -112,11 +109,11 @@ module.exports = {
           items: [
             {
               label: 'Set Up the Config Manager',
-              to: 'docs/guides/config',
+              to: 'docs/lumos/guides/config',
             },
 			{
               label: 'Set Up the Lumos Indexer',
-              to: 'docs/guides/indexer',
+              to: 'docs/lumos/guides/indexer',
             },
           ],
         }

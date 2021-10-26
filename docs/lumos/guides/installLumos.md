@@ -6,7 +6,7 @@ import useBaseUrl from "@docusaurus/useBaseUrl";
 
 import Link from "@docusaurus/Link";
 
-This guide shows how to add necessary  <Link to={useBaseUrl('/docs/introduction/lumoscomponents')}>Lumos Components</Link> to a Node.js project as dependencies. 
+This guide shows how to add necessary  <Link to={useBaseUrl('/docs/lumos/introduction/lumoscomponents')}>Lumos Components</Link> to a Node.js project as dependencies. 
 
 ## Prerequisites
 
@@ -14,7 +14,7 @@ The following prerequisites apply for installing Lumos packages as dependencies 
 
 - The development environment is set up. 
 
-  For more information, see <Link to={useBaseUrl('/docs/preparation/setupsystem')}>Set Up the Development Environment</Link>.
+  For more information, see <Link to={useBaseUrl('/docs/lumos/preparation/setupsystem')}>Set Up the Development Environment</Link>.
 
 ## Environment
 
@@ -115,7 +115,7 @@ Done in 125.02s.
 
 ### gyp Error About Missing Dependencies for node-gyp
 
-If any gyp error encountered regarding missing node-gyp dependencies, check for details of the <Link to={useBaseUrl('/docs/preparation/setupsystem#install-dependencies-for-node-gyp')}>node-gyp installation dependencies</Link> or the instructions on [node-gyp](https://github.com/nodejs/node-gyp) to fix the error.
+If any gyp error encountered regarding missing node-gyp dependencies, check for details of the <Link to={useBaseUrl('/docs/lumos/preparation/setupsystem#install-dependencies-for-node-gyp')}>node-gyp installation dependencies</Link> or the instructions on [node-gyp](https://github.com/nodejs/node-gyp) to fix the error.
 
 ### Error While Rebuilding the xxhash Package
 

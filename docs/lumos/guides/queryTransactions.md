@@ -18,7 +18,7 @@ Lumos supports to query on transactions for the options including <var>lock</var
 
 - <var>type</var>: A type script or a ScriptWrapper of a type script.
 
-  For more information about [ScriptWrapper](https://nervosnetwork.github.io/lumos/interfaces/base.scriptwrapper.html), see <Link to={useBaseUrl('/docs/guides/querycells#fine-grained-query-for-cells')}>Fine-grained Query for Cells</Link>.
+  For more information about [ScriptWrapper](https://nervosnetwork.github.io/lumos/interfaces/base.scriptwrapper.html), see <Link to={useBaseUrl('/docs/lumos/guides/querycells#fine-grained-query-for-cells')}>Fine-grained Query for Cells</Link>.
 
 - <var>argsLen</var>: The lock or type args length. The default value of <var>argsLen</var> is -1 for the query on a full slice of the args.
 
@@ -34,8 +34,8 @@ Lumos supports to query on transactions for the options including <var>lock</var
 
 The following prerequisites apply for the examples in this guide:
 
-- The development environment is set up. For more information, see <Link to={useBaseUrl('/docs/preparation/setupsystem')}>Set Up the Development Environment</Link>.
-- The Lumos packages are installed. For more information, see <Link to={useBaseUrl('/docs/guides/installlumos')}>Install Lumos Packages</Link>.
+- The development environment is set up. For more information, see <Link to={useBaseUrl('/docs/lumos/preparation/setupsystem')}>Set Up the Development Environment</Link>.
+- The Lumos packages are installed. For more information, see <Link to={useBaseUrl('/docs/lumos/guides/installlumos')}>Install Lumos Packages</Link>.
 
 ## Environment
 

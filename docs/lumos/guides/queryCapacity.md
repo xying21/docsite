@@ -11,8 +11,8 @@ import Link from "@docusaurus/Link";
 
 The following prerequisites apply for the examples of this guide:
 
-- The development environment is set up. For more information, see <Link to={useBaseUrl('/docs/preparation/setupsystem')}>Set Up the Development Environment</Link>.
-- The Lumos packages are installed. For more information, see <Link to={useBaseUrl('/docs/guides/installlumos')}>Install Lumos Packages</Link>.
+- The development environment is set up. For more information, see <Link to={useBaseUrl('/docs/lumos/preparation/setupsystem')}>Set Up the Development Environment</Link>.
+- The Lumos packages are installed. For more information, see <Link to={useBaseUrl('/docs/lumos/guides/installlumos')}>Install Lumos Packages</Link>.
 
 ## Environment
 
@@ -103,7 +103,7 @@ The minimal cell capacity is 10200000000n
 
 ### Get the Balance of an Account
 
-The balance of an account means the total CKB capacity of the account. For more information, see <Link to={useBaseUrl('/docs/reference/ckbaccount#ckb-capacity-of-an-account')}>CKB Capacity of an Account</Link>.
+The balance of an account means the total CKB capacity of the account. For more information, see <Link to={useBaseUrl('/docs/lumos/reference/ckbaccount#ckb-capacity-of-an-account')}>CKB Capacity of an Account</Link>.
 
 The following example gathers the live (unspent) cells for a specific lock script (the lock script is the ID of an account) and then calculates the total capacity as the balance of the account. 
 
@@ -173,7 +173,7 @@ export async function getSUDTBalance(lock: Script, sudtType: Script) {
 }
 ```
 
-For more information about SUDT and SUDT operations, see <Link to={useBaseUrl('/docs/guides/buildtransactions#issue-sudt-tokens')}>Issue SUDT Tokens</Link> and <Link to={useBaseUrl('/docs/guides/buildtransactions#transfer-sudt-tokens')}>Transfer SUDT Tokens</Link>.
+For more information about SUDT and SUDT operations, see <Link to={useBaseUrl('/docs/lumos/guides/buildtransactions#issue-sudt-tokens')}>Issue SUDT Tokens</Link> and <Link to={useBaseUrl('/docs/lumos/guides/buildtransactions#transfer-sudt-tokens')}>Transfer SUDT Tokens</Link>.
 
 ### Find Cells for Sufficient Capacity
 

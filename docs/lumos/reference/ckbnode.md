@@ -28,11 +28,11 @@ A CKB node can be set up to connect and interact with one of the following CKB n
 
 There are two options for installing a CKB node:
 
-- **<Link to={useBaseUrl('/docs/reference/ckbnode#install-a-ckb-node-by-using-tippy')}>Install a CKB Node by Using Tippy</Link>**
+- <Link to={useBaseUrl('/docs/lumos/reference/ckbnode#install-a-ckb-node-by-using-tippy')}>**Install a CKB Node by Using Tippy**</Link>
 
   **Tippy** is a tool that helps set up and manage CKB nodes. It can install and start running a CKB node by one simple click.
 
-- **<Link to={useBaseUrl('/docs/reference/ckbnode#install-a-ckb-node-by-using-the-pre-built-installer-package')}>Install a CKB Node by Using the Pre-built Installer Package</Link>**
+- <Link to={useBaseUrl('/docs/lumos/reference/ckbnode#install-a-ckb-node-by-using-the-pre-built-installer-package')}>**Install a CKB Node by Using the Pre-built Installer Package**</Link>
 
   The pre-built installer package contains the following tools: 
 
@@ -283,7 +283,7 @@ ckb 0.39.0
 
 ### Step 3. Run the CKB node.
 
-**DEV chain** is the recommended network for the later examples and CKB starters. For more information about CKB networks, see <Link to={useBaseUrl('/docs/reference/ckbnode#ckb-networks')}>CKB Networks</Link>.
+**DEV chain** is the recommended network for the later examples and CKB starters. For more information about CKB networks, see <Link to={useBaseUrl('/docs/lumos/reference/ckbnode#ckb-networks')}>CKB Networks</Link>.
 
 <Tabs
   defaultValue="dev"

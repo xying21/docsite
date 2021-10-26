@@ -6,7 +6,7 @@ import useBaseUrl from "@docusaurus/useBaseUrl";
 
 import Link from "@docusaurus/Link";
 
-Lumos also provides the functions to manage the keys, addresses and the lock script of a <Link to={useBaseUrl('/docs/preparation/createaccount#ckb-account')}>CKB Account</Link>.
+Lumos also provides the functions to manage the keys, addresses and the lock script of a <Link to={useBaseUrl('/docs/lumos/preparation/createaccount#ckb-account')}>CKB Account</Link>.
 
 The following figure shows the Lumos functions for the conversion between private key, public key, Lock Script, and CKB address.
 
@@ -16,8 +16,8 @@ The following figure shows the Lumos functions for the conversion between privat
 
 The following prerequisites apply for the examples in this guide:
 
-- The development environment is set up. For more information, see <Link to={useBaseUrl('/docs/preparation/setupsystem')}>Set Up the Development Environment</Link>.
-- The Lumos packages are installed. For more information, see <Link to={useBaseUrl('/docs/guides/installlumos')}>Install Lumos Packages</Link>.
+- The development environment is set up. For more information, see <Link to={useBaseUrl('/docs/lumos/preparation/setupsystem')}>Set Up the Development Environment</Link>.
+- The Lumos packages are installed. For more information, see <Link to={useBaseUrl('/docs/lumos/guides/installlumos')}>Install Lumos Packages</Link>.
 
 ## Environment
 
