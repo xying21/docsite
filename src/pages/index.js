@@ -1,79 +1,97 @@
 import React from 'react';
-import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
-import useBaseUrl from "@docusaurus/useBaseUrl";
-import Link from "@docusaurus/Link";
-import Layout from "@theme/Layout";
-import Head from '@docusaurus/Head';
+import classnames from 'classnames';
+import Layout from '@theme/Layout';
+import Link from '@docusaurus/Link';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import styles from './styles.module.css';
 
+const features = [
+  {
+    title: <>Core Concepts</>,
+    //imageUrl: 'img/getting-started.svg',
+    description: (
+      <>
+        The core concepts of Nervos CKB are the prerequisite knowledge for the development on Nervos CKB.
+      </>
+    ),
+    pageUrl: "docs/learn/ckb"
+  },
+  {
+    title: <>Development Stacks</>,
+    //imageUrl: 'img/sdks-samples.svg',
+    description: (
+      <>
+      The documentation includes the guides of the framework, SDKs, tools developed by Cryptape for developing applications on Nervos CKB.
+      </>
+    ),
+    pageUrl: "docs/tools"
+  },
+];
 
-function Hero() {
-  const context = useDocusaurusContext();
-  const { siteConfig = {} } = context;
+function Feature({imageUrl, title, description, pageUrl}) {
+  const imgUrl = useBaseUrl(imageUrl);
   return (
-    <header className="masthead">
-
-	<div className="row">
-	<div className="col"><object><img display="block" width="420px" src={useBaseUrl("img/developer.gif")} /></object></div>
-	<div className="col">
-        <h1>{siteConfig.title}</h1>
-		<h3>A documentation hub for CKB developers</h3>
-        <Link
-          to={useBaseUrl("docs/tools")}
-          className="button button--primary button--outline button--lg"
-        >
-          Learn More
-        </Link>
-      </div>
-	</div>
-    </header>
-  );
-}
-       /* <h3>{siteConfig.tagline}</h3>*/
-function Feature({ title, children, color = "primary" }) {
-  const h2 = "text";
-  return (
-    <div className="col">
-      <h2 className={"text--center text--" + color} style={{ color }}>
-        {title}
-      </h2>
-      <p className="text--center">{children}</p>
+    <div className={classnames('col col--6 flx-gray', styles.feature)}>
+      {imgUrl && (
+        <div className="text--center">
+          <img className={styles.featureImage} src={imgUrl} alt={title} />
+        </div>
+      )}
+      <h2>{title}</h2>
+      <p>{description}</p>
+      <p className="learn-more"><a href={pageUrl}>Learn more →</a></p>
     </div>
+    
   );
 }
 
-function Body() {
-  return (
+const iframe = '<iframe src="https://d3metalab.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>'
 
-    <main className="container">
-	  
-      <div className="row">
-
-        <Feature>
-		<img src={useBaseUrl("img/tippy.png")} />
-          The <b>Lumos</b> framework with powerful modules saves you the hassle of creating code for CKB queries and transactions.<br/>
-
-		  <a href="">Learning More</a>
-        </Feature>
-        <Feature color="#BA00AC">
-		<img src={useBaseUrl("img/tippy.png")} />
-         <b>Tippy</b> helps set up and manage CKB nodes. It can install and start running a CKB node by one simple click.
-        </Feature>
-        <Feature title="Easy to Use" color="#00B100">
-          The <b>Lumos</b> framework is open source, and can be used on Mac, Linux and windows machines.
-        </Feature>
-      </div>
-	  
-    </main>
-  );
+function Iframe(props) {
+  return (<div dangerouslySetInnerHTML={ {__html:  props.iframe?props.iframe:""}} />);
 }
-export default function Home() {
+
+
+
+function Home() {
+  const context = useDocusaurusContext();
+  const {siteConfig = {}} = context;
   return (
-    <Layout>
-	<Head>
-</Head>
-      <Hero />
-      <Body />
-	  
+    <Layout
+      title="Home"
+      description="Add strong authentication, fine-grained authorization in your apps, devices, and APIs.">
+      <header className={classnames('hero hero--secondary', styles.heroBanner)}>
+        <div className="container">
+          <h1 className="hero__title">{siteConfig.title}</h1>
+          <p className="hero__subtitle">{siteConfig.tagline}</p>
+          <div className={styles.buttons}> 
+            <Link
+              className={classnames(
+                'button cta-btn button--outline button--primary button--lg',
+                styles.getStarted,
+              )}
+              to={useBaseUrl('docs/learn/ckb')}>
+              <i className="feather icon-arrow-right"></i> Get started
+            </Link>
+          </div>
+        </div>
+      </header>
+      <main>
+        {features && features.length && (
+          <section className={styles.features}>
+            <div className="container">
+              <div className="row">
+                {features.map((props, idx) => (
+                  <Feature key={idx} {...props} />
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+      </main>
     </Layout>
   );
 }
+
+export default Home;

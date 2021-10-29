@@ -1,6 +1,6 @@
 ---
-id: ckbnode
-title: CKB Nodes and Networks
+id: installnode
+title: Install a CKB Node
 ---
 
 import useBaseUrl from "@docusaurus/useBaseUrl";
@@ -8,21 +8,6 @@ import useBaseUrl from "@docusaurus/useBaseUrl";
 import Link from "@docusaurus/Link";
 
 The CKB nodes used in the DApp development are **full nodes** that are the verifiers of the CKB network. A CKB full node verifies new blocks and transactions, relays blocks and transactions, and selects the chain fork on which it agrees.
-
-## CKB Networks
-
-A CKB node can be set up to connect and interact with one of the following CKB networks:
-
-- **Mainnet (Lina)**: Mainnet is the main CKB public network. The real-time information of the Lina Mainnet can be checked on the [CKB Explorer](https://explorer.nervos.org/) page.
-
-- **Testnet (Aggron4)**: Testnet is used to test applications integration and smart contracts in real environment with actual data. 
-
-  :::info
-
-  For the first time to run a node on the **Testnet**, syncing data requires upwards of one hour for the current number (**1,300,000+**) of blocks depending on the network connection. The real-time block number on the Testnet can be checked on the [CKB Explorer](https://explorer.nervos.org/aggron) page.<br/>
-  :::
-
-- **DEV Chain**:  DEV chain is a local blockchain that provides an efficient and useful development mode for building and testing applications.
 
 ## Installation Options
 

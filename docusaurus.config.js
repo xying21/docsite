@@ -47,7 +47,7 @@ module.exports = {
           //type: 'dropdown',
           label: 'Learn',
           position: 'right',
-		  to: 'docs/learn/intro',
+		  to: 'docs/learn/ckb',
 		  // items: [
             // {
               // label: 'What is CKB?',
@@ -76,6 +76,11 @@ module.exports = {
           // ],
         },
         {to: 'blog', label: 'Blog', position: 'right'},
+		{
+          label: 'Support',
+          href: 'https://discord.gg/WsuVsZ2F6Y',
+		  position: 'right',
+        },
       ],
     },
     footer: {
