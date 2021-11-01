@@ -24,7 +24,7 @@ The following prerequisites apply for creating the accounts:
 
 This guide uses the CKB 0.39.0 version. All releases can be found on the <a title="Download" href="https://github.com/nervosnetwork/ckb/releases"><i class="feather icon-download"></i>CKB releases</a> page. If the package is already downloaded, go to step 2 directly.
 
-For more information, see <Link to={useBaseUrl('/docs/lumos/reference/ckbnode#step-1-download-the-ckb-pre-built-installer-package')}>Download the CKB Pre-built Installer Package</Link>.
+For more information, see <Link to={useBaseUrl('/docs/tutorials/installnode#step-1-download-the-ckb-pre-built-installer-package')}>Download the CKB Pre-built Installer Package</Link>.
 
 ### Step 2. Verify the ckb-cli tool is working and check the version.
 

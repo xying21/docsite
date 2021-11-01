@@ -6,11 +6,9 @@ import useBaseUrl from "@docusaurus/useBaseUrl";
 
 import Link from "@docusaurus/Link";
 
-This guide introduces the concepts of CKB account, CKB capacity of an account, and how to create CKB accounts before the DApp development.
+This guide introduces the concepts of CKB account, CKB capacity of an account.
 
-The accounts can be created by using ckb-cli. DEV chain also provides two accounts from the genesis cells that were issued with a considerable amount of capacity. 
-
-You can create new accounts when developing your DApps by using the method demonstrated in this guide. 
+For more information about how to create CKB accounts, see <Link to={useBaseUrl('/docs/tutorials/createaccount')}>Create Accounts</Link>.
 
 ## CKB Account
 
@@ -135,7 +133,7 @@ If an account seeks to perform transactional actions, such as transferring CKB t
 
 For example, the minimum CKB capacity requirement for a regular transaction is 61 [CKB](https://docs.nervos.org/docs/basics/glossary#shannon "One CKByte is equal to 100,000,000 Shannons.") (6,100,000,000 shannons), and the minimum CKB capacity requirement for a DAO deposit transaction is 102 CKB (10,200,000,000 shannons).
 
-Accounts on Testnet can request CKB capacity on [https://faucet.nervos.org](https://faucet.nervos.org/). Accounts on DEV chain can obtain CKB capacity by mining blocks as miners. For more information about getting CKB capacity, see **<Link to={useBaseUrl('/docs/lumos/preparation/createaccount#step-5-get-ckb-capacity-for-the-account-of-alice')}>step 5</Link>** of <Link to={useBaseUrl('/docs/lumos/reference/ckbaccount#create-the-accounts-by-using-ckb-cli')}>Create the accounts by Using ckb-cli</Link>.
+Accounts on Testnet can request CKB capacity on [https://faucet.nervos.org](https://faucet.nervos.org/). Accounts on DEV chain can obtain CKB capacity by mining blocks as miners. For more information about getting CKB capacity, see **<Link to={useBaseUrl('/docs/tutorials/createaccount#step-5-get-ckb-capacity-for-the-account-of-alice')}>step 5</Link>** of <Link to={useBaseUrl('/docs/tutorials/createaccount#create-the-accounts-by-using-ckb-cli')}>Create the accounts by Using ckb-cli</Link>.
 
 :::
 

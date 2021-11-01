@@ -148,7 +148,7 @@ CKB的高明之处在于，把这个“保险箱”私有化，就可以收取�
 
 一笔交易主要包含三个部分：一组输入 cell（`input`），一组输出 cell（`output`），依赖库代码（`deps`）和签名（`witness`）来支持交易处理。
 
-关于交易结构的更多资料可以查看 [RFC-0022-交易结构](../../rfcs/0019-data-structures/0019-data-structures.zh)。
+关于交易结构的更多资料可以查看 RFC-0022-交易结构。
 
 ### 交易验证
 
@@ -250,7 +250,7 @@ CKB的高明之处在于，把这个“保险箱”私有化，就可以收取�
 | `hash`  | H256(hash)         | **当前 cell 所属的转账的哈希。**   |
 | `index` | uint32             | **当前 cell 的转账 output 列表的索引。** |
 
-关于 Nervos CKB 上转账的更多信息，可以在  [RFC-0022-交易结构](../../rfcs/0019-data-structures/0019-data-structures.zh) 中找到。
+关于 Nervos CKB 上转账的更多信息，可以在  RFC-0022-交易结构中找到。
 
 ---
 
@@ -262,13 +262,13 @@ CKB的高明之处在于，把这个“保险箱”私有化，就可以收取�
 
 矿工的工作是将交易打包到一个区块中，并进行工作量证明计算，获取交易打包的权力，最后将打包好的区块广播到 CKB 网络。其他矿工在接收到这个区块后，验证这个区块中的内容，然后再从自己的交易池中收集一部分交易，并开始基于这个接收到的区块挖掘下一个新的区块。
 
-在 CKB 中，一个区块在它的区块结构中还包含了叔块的信息，包括完整的叔块头和叔块的 `proposals`（提案交易，因为 CKB 采用的是两步交易确认，一笔交易被确认需要经过 proposal 和 commit 两步，了解更多请参考 [RFC-0020-CKB 共识协议](../../rfcs/0020-ckb-consensus-protocol/0020-ckb-consensus-protocol.zh)）。
+在 CKB 中，一个区块在它的区块结构中还包含了叔块的信息，包括完整的叔块头和叔块的 `proposals`（提案交易，因为 CKB 采用的是两步交易确认，一笔交易被确认需要经过 proposal 和 commit 两步，了解更多请参考 RFC-0020-CKB 共识协议。
 
 ### 计算 cycles 和交易大小
 
 在打包一笔交易到区块中时，矿工需要考虑两个限制：计算 cycles 和交易大小。
 
-在 CKB 中，交易验证（特别是脚本执行）所消耗的计算资源是通过 cycles 来衡量的。CKB VM 中每一条指令都有不同的 cycles 成本。验证区块中所有交易执行的所有脚本所消耗的总 cycles 受到 CKB 协议中定义的 `MAX_BLOCK_CYCLES` 值的限制。（了解更多关于 cycles 计算的信息，请参考 [RFC-0014-VM Cycle 限制](../../rfcs/0014-vm-cycle-limits/0014-vm-cycle-limits.zh)）
+在 CKB 中，交易验证（特别是脚本执行）所消耗的计算资源是通过 cycles 来衡量的。CKB VM 中每一条指令都有不同的 cycles 成本。验证区块中所有交易执行的所有脚本所消耗的总 cycles 受到 CKB 协议中定义的 `MAX_BLOCK_CYCLES` 值的限制。（了解更多关于 cycles 计算的信息，请参考 RFC-0014-VM Cycle 限制
 
 交易的大小通过字节作为单位去衡量。区块中所有交易的大小总和应该要小于 CKB 协议定义的 `MAX_BLOCK_BYTES` 值。
 

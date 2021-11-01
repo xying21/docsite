@@ -6,7 +6,7 @@ import useBaseUrl from "@docusaurus/useBaseUrl";
 
 import Link from "@docusaurus/Link";
 
-In this guide, we will prepare two CKB accounts, Alice and Bob, that will be used in the <var>accounts.ts</var> file in the later <Link to={useBaseUrl('/docs/lumos/preparation/hellolumos')}>Hello Lumos</Link> example. For more information about the concepts of CKB accounts, CKB capacity, and the methods to create accounts, see <Link to={useBaseUrl('/docs/lumos/reference/ckbaccount')}>CKB Accounts and Capacity</Link>.
+In this guide, we will prepare two CKB accounts, Alice and Bob, that will be used in the <var>accounts.ts</var> file in the later <Link to={useBaseUrl('/docs/lumos/preparation/hellolumos')}>Hello Lumos</Link> example. For more information about the concepts of CKB accounts, CKB capacity, and the methods to create accounts, see <Link to={useBaseUrl('/docs/learn/ckbaccount')}>CKB Accounts and Capacity</Link>.
 
 ## Prerequisites 
 
@@ -18,7 +18,7 @@ The following prerequisites apply for creating the accounts:
 
 ### Step 1. Download the CKB pre-built installer package.
 
-The CKB pre-built installer package includes the ckb-cli tool. For more information, see <Link to={useBaseUrl('/docs/lumos/reference/ckbnode#step-1-download-the-ckb-pre-built-installer-package')}>Download the CKB Pre-built Installer Package</Link>.
+The CKB pre-built installer package includes the ckb-cli tool. For more information, see <Link to={useBaseUrl('/docs/learn/ckbnode#step-1-download-the-ckb-pre-built-installer-package')}>Download the CKB Pre-built Installer Package</Link>.
 
 This guide uses the CKB 0.39.0 version. All releases can be found on the <a title="Download" href="https://github.com/nervosnetwork/ckb/releases"><i class="feather icon-download"></i>CKB releases</a> page. If the package is already downloaded, go to step 2 directly.
 
@@ -57,7 +57,7 @@ message: "Success exported account as extended privkey to: \"alice\", please use
 
 ### Step 5. Get CKB capacity for the account of Alice.
 
-For more information about CKB capacity, see <Link to={useBaseUrl('/docs/lumos/reference/ckbaccount#ckb-capacity-of-an-account')}>CKB Capacity of an Account</Link>.
+For more information about CKB capacity, see <Link to={useBaseUrl('/docs/learn/ckbaccount#ckb-capacity-of-an-account')}>CKB Capacity of an Account</Link>.
 
 To get CKB capacity for Alice on **DEV chain**, specify Alice as the miner who receives mining rewards.
 

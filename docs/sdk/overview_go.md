@@ -3,37 +3,6 @@ id: overview_go
 title: ckb-sdk-go
 sidebar_label: ckb-sdk-go
 ---
-- [Overview](#overview)
-- [Features](#features)
-- [Contact & Support](#contact---support)
-- [Quick Start](#quick-start)
-  * [System Requirements](#system-requirements)
-  * [Install and Run a CKB Node on DEV Chain](#install-and-run-a-ckb-node-on-dev-chain)
-  * [Get CKB Capacity for Test Accounts](#get-ckb-capacity-for-test-accounts)
-  * [Install Go](#install-go)
-  * [Create a Go Project](#create-a-go-project)
-  * [Enable Dependency Tracking for the Code](#enable-dependency-tracking-for-the-code)
-  * [Create a <code>hello.go</code> File](#create-a--code-hellogo--code--file)
-  * [Add New Modules for ckb-sdk-go.](#add-new-modules-for-ckb-sdk-go)
-  * [Run the Code](#run-the-code)
-- [Examples](#examples)
-  * [RPC Examples](#rpc-examples)
-  * [Send CKB with One Single Input](#send-ckb-with-one-single-input)
-  * [Send CKB with Multiple Inputs](#send-ckb-with-multiple-inputs)
-  * [Send CKB with Multiple Inputs and Multisig](#send-ckb-with-multiple-inputs-and-multisig)
-  * [Send CKB with Multiple Inputs and Hybirdsig](#send-ckb-with-multiple-inputs-and-hybirdsig)
-  * [Collect Cells](#collect-cells)
-  * [Collect Cells with Filter](#collect-cells-with-filter)
-  * [Collect Cells and Filter Out Immature Cells](#collect-cells-and-filter-out-immature-cells)
-  * [Create a Payment](#create-a-payment)
-  * [Deposit CKB to DAO](#deposit-ckb-to-dao)
-  * [Withdraw CKB from DAO (Phase 1)](#withdraw-ckb-from-dao--phase-1-)
-  * [Withdraw CKB from DAO (Phase 2)](#withdraw-ckb-from-dao--phase-2-)
-  * [Issue cheque Cells](#issue-cheque-cells)
-  * [Claim cheque Cells](#claim-cheque-cells)
-  * [Withdraw cheque Cells](#withdraw-cheque-cells)
-  * [Transfer SUDT](#transfer-sudt)
-
 ## Overview
 
 CKB Go SDK (ckb-sdk-go) encapsulates cryptographic algorithms and RPC services to support the development of applications on CKB. The knowledge of CKB Data Model (see [Nervos CKB Reference](https://docs.nervos.org/docs/reference/introduction) and [CKB RFC: CKB Data Structures](https://github.com/nervosnetwork/rfcs/blob/master/rfcs/0019-data-structures/0019-data-structures.md)) and [JSON-RPC](https://github.com/nervosnetwork/ckb/tree/develop/rpc) are crucial in developing applications by using this SDK.

@@ -1,6 +1,6 @@
 ---
 id: ckbaddress
-title: CKB Address
+title: CKB Addresses
 ---
 import useBaseUrl from "@docusaurus/useBaseUrl";
 

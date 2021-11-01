@@ -3,27 +3,6 @@ id: overview_java
 title: ckb-sdk-java
 sidebar_label: ckb-sdk-java
 ---
-- [Overview](#overview)
-- [Features](#features)
-- [License](#license)
-- [Changelog](#changelog)
-- [Contact & Support](#contact---support)
-- [Contribution](#contribution)
-- [Quick Start](#quick-start)
-  * [System Requirements](#system-requirements)
-  * [Install and Run a CKB Node on DEV Chain](#install-and-run-a-ckb-node-on-dev-chain)
-  * [Get CKB Capacity for Test Accounts](#get-ckb-capacity-for-test-accounts)
-  * [Install JDK](#install-jdk)
-  * [Set Up the Project by Using Gradle](#set-up-the-project-by-using-gradle)
-  * [Set Up the Project by Using Maven](#set-up-the-project-by-using-maven)
-- [Examples](#examples)
-  * [RPC Examples](#rpc-examples)
-  * [Single-sig Transfer](#single-sig-transfer)
-  * [Multi-sig Transfer](#multi-sig-transfer)
-  * [Issue and Transfer SUDT](#issue-and-transfer-sudt)
-  * [ACP Transaction](#acp-transaction)
-  * [Generate Addresses](#generate-addresses)
-
 ## Overview
 
 CKB Java SDK (ckb-sdk-java) encapsulates cryptographic algorithms and RPC services to support the development of applications on [CKB](https://github.com/nervosnetwork/ckb). The knowledge of CKB Data Model (see [Nervos CKB Reference](https://docs.nervos.org/docs/reference/introduction) and [CKB RFC: CKB Data Structures](https://github.com/nervosnetwork/rfcs/blob/master/rfcs/0019-data-structures/0019-data-structures.md)) and [JSON-RPC](https://github.com/nervosnetwork/ckb/tree/develop/rpc) are crucial in developing applications by using this SDK.

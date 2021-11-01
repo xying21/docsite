@@ -13,11 +13,11 @@ The CKB nodes used in the DApp development are **full nodes** that are the verif
 
 There are two options for installing a CKB node:
 
-- <Link to={useBaseUrl('/docs/lumos/reference/ckbnode#install-a-ckb-node-by-using-tippy')}>**Install a CKB Node by Using Tippy**</Link>
+- **[Install a CKB Node by Using Tippy](#install-a-ckb-node-by-using-tippy)**
 
   **Tippy** is a tool that helps set up and manage CKB nodes. It can install and start running a CKB node by one simple click.
 
-- <Link to={useBaseUrl('/docs/lumos/reference/ckbnode#install-a-ckb-node-by-using-the-pre-built-installer-package')}>**Install a CKB Node by Using the Pre-built Installer Package**</Link>
+- **[Install a CKB Node by Using the Pre-built Installer Package](#install-a-ckb-node-by-using-the-pre-built-installer-package)**
 
   The pre-built installer package contains the following tools: 
 
@@ -56,7 +56,7 @@ $ ./Tippy
 
 <p><b>Step 3. Create a CKB chain.</b></p>
 
-<p><b>DEV chain</b> is the recommended network for the later examples and CKB starters. For more information about CKB networks, see <Link to={useBaseUrl('/docs/reference/ckbnode#ckb-networks')}>CKB Networks</Link>.</p>
+<p><b>DEV chain</b> is the recommended network for the later examples and CKB starters. For more information about CKB networks, see <Link to={useBaseUrl('/docs/learn/ckbnode#ckb-networks')}>CKB Networks</Link>.</p>
 <p>To create a CKB node on <b>DEV chain</b>, click the <b>Launch a CKB devnet instantly</b> button on the home page.</p>
 
 <img src={useBaseUrl("img/tippycreate.png")}/>
@@ -116,7 +116,7 @@ value = 1000
 
 <p><b>Step 3. Create a CKB chain.</b></p>
 
-<p><b>DEV chain</b> is the recommended network for the later examples and CKB starters. For more information about CKB networks, see <Link to={useBaseUrl('/docs/reference/ckbnode#ckb-networks')}>CKB Networks</Link>.</p>
+<p><b>DEV chain</b> is the recommended network for the later examples and CKB starters. For more information about CKB networks, see <Link to={useBaseUrl('/docs/learn/ckbnode#ckb-networks')}>CKB Networks</Link>.</p>
 <p>To create a CKB node on <b>DEV chain</b>, click the <b>Launch a CKB devnet instantly</b> button on the home page.</p>
 
 <img src={useBaseUrl("img/tippycreate.png")}/>
@@ -169,7 +169,7 @@ value = 1000
 <p>A web page on <a>http://localhost:5000/Home</a> will be opened in a browser after the double click. If the page is not opened, open the browser and type <a>http://localhost:5000/Home</a> in the address field to access the Tippy web UI.</p>
 
 <p><b>Step 3. Create a CKB chain.</b></p>
-<p><b>DEV chain</b> is the recommended network for the later examples and CKB starters. For more information about CKB networks, see <Link to={useBaseUrl('/docs/reference/ckbnode#ckb-networks')}>CKB Networks</Link>.</p>
+<p><b>DEV chain</b> is the recommended network for the later examples and CKB starters. For more information about CKB networks, see <Link to={useBaseUrl('/docs/learn/ckbnode#ckb-networks')}>CKB Networks</Link>.</p>
 <p>To create a CKB node on <b>DEV chain</b>, click the <b>Launch a CKB devnet instantly</b> button on the home page.</p>
 
 <img src={useBaseUrl("img/tippycreate.png")}/>
@@ -268,7 +268,7 @@ ckb 0.39.0
 
 ### Step 3. Run the CKB node.
 
-**DEV chain** is the recommended network for the later examples and CKB starters. For more information about CKB networks, see <Link to={useBaseUrl('/docs/lumos/reference/ckbnode#ckb-networks')}>CKB Networks</Link>.
+**DEV chain** is the recommended network for the later examples and CKB starters. For more information about CKB networks, see <Link to={useBaseUrl('/docs/learn/ckbnode#ckb-networks')}>CKB Networks</Link>.
 
 <Tabs
   defaultValue="dev"

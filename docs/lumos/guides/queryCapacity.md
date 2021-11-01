@@ -103,7 +103,7 @@ The minimal cell capacity is 10200000000n
 
 ### Get the Balance of an Account
 
-The balance of an account means the total CKB capacity of the account. For more information, see <Link to={useBaseUrl('/docs/lumos/reference/ckbaccount#ckb-capacity-of-an-account')}>CKB Capacity of an Account</Link>.
+The balance of an account means the total CKB capacity of the account. For more information, see <Link to={useBaseUrl('/docs/learn/ckbaccount#ckb-capacity-of-an-account')}>CKB Capacity of an Account</Link>.
 
 The following example gathers the live (unspent) cells for a specific lock script (the lock script is the ID of an account) and then calculates the total capacity as the balance of the account. 
 
