@@ -1,11 +1,8 @@
 module.exports = {
-	sidebar2: [
-	{type:'doc',id:'tools'},
-	{'Developer Tools': [{'Lumos':[{'Introduction':['lumos/introduction/intro','lumos/introduction/lumoscomponents','lumos/introduction/workflow']},{'Getting Started': ['lumos/preparation/setupsystem','lumos/preparation/createaccount','lumos/preparation/hellolumos']},{'Guides': [{'Install and Configure Lumos':['lumos/guides/installlumos','lumos/guides/config','lumos/guides/indexer']},'lumos/guides/querycells','lumos/guides/querycapacity','lumos/guides/querytransactions','lumos/guides/buildtransactions','lumos/guides/manageaccounts']},{'Examples': ['lumos/guides/integratenft']}]},{'CKB SDK':['sdk/overview_go','sdk/overview_java']},{'Godwoken':['godwoken/godwoken']}]},
-	{'Tutorials':['tutorials/createaccount','tutorials/installnode']},
-  ],
   	sidebar3: [
-	
-	{'Core Concepts':['learn/ckb','learn/structure','learn/ckbaddress','learn/ckbaccount','learn/ckbnode']}
+	{'Basics About Nervos':['basics/intro','basics/programming-model','basics/data-structure','basics/ckbaddress','basics/ckbaccount','basics/ckbnode']},
+	{'Tools':['tools/intro',{'ckb-cli':['tools/ckb-cli/intro','tools/ckb-cli/ckb-cli-account','tools/ckb-cli/ckb-cli-rpc','tools/ckb-cli/ckb-cli-wallet','tools/ckb-cli/ckb-cli-dao','tools/ckb-cli/ckb-cli-tx','tools/ckb-cli/ckb-cli-mock-tx','tools/ckb-cli/ckb-cli-util','tools/ckb-cli/ckb-cli-molecule']},{'Lumos':[{'Introduction':['tools/lumos/introduction/intro','tools/lumos/introduction/lumoscomponents']},{'Getting Started': ['tools/lumos/preparation/setupsystem','tools/lumos/preparation/hellolumos']},{'Guides': [{'Install and Configure Lumos':['tools/lumos/guides/installlumos','tools/lumos/guides/config','tools/lumos/guides/indexer']},'tools/lumos/guides/querycells','tools/lumos/guides/querycapacity','tools/lumos/guides/querytransactions','tools/lumos/guides/buildtransactions','tools/lumos/guides/manageaccounts']},{'Examples': ['tools/lumos/guides/integratenft']}]},{'CKB SDK':['tools/sdk/overview_go','tools/sdk/overview_java']},{'Godwoken':['tools/godwoken/godwoken']}]},
+	{'Develop Applications':['develop/workflow','develop/installnode','develop/createaccount']},
+	{type:'doc',id:'glossary'},
   ],
 };

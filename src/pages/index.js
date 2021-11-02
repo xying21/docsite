@@ -71,7 +71,7 @@ function Home() {
                 'button cta-btn button--outline button--primary button--lg',
                 styles.getStarted,
               )}
-              to={useBaseUrl('docs/learn/ckb')}>
+              to={useBaseUrl('docs/basics/intro')}>
               <i className="feather icon-arrow-right"></i> Get started
             </Link>
           </div>

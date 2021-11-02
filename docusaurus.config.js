@@ -47,7 +47,7 @@ module.exports = {
           //type: 'dropdown',
           label: 'Learn',
           position: 'right',
-		  to: 'docs/learn/ckb',
+		  to: 'docs/basics/intro',
 		  // items: [
             // {
               // label: 'What is CKB?',
@@ -55,11 +55,11 @@ module.exports = {
             // },
           // ],
         },
-		{
+		/* {
           //type: 'dropdown',
           label: 'Develop',
           position: 'right',
-		  to: 'docs/tools',
+		  to: 'docs/tools/intro',
 		  // items: [
             // {
               // label: 'Lumos',
@@ -74,7 +74,7 @@ module.exports = {
               // to: 'docs/sdk/overview_go',
             // },
           // ],
-        },
+        }, */
         {to: 'blog', label: 'Blog', position: 'right'},
 		{
           label: 'Support',
@@ -92,7 +92,7 @@ module.exports = {
 
             {
               label: 'What is Lumos?',
-              to: 'docs/lumos/introduction/intro',
+              to: 'docs/tools/lumos/introduction/intro',
             },
           ],
         },
@@ -101,11 +101,11 @@ module.exports = {
           items: [
             {
               label: 'Set Up the Development Environment',
-              to: 'docs/lumos/preparation/setupsystem',
+              to: 'docs/tools/lumos/preparation/setupsystem',
             },
             {
               label: 'Install Lumos Packages',
-              to: 'docs/lumos/guides/installlumos',
+              to: 'docs/tools/lumos/guides/installlumos',
             }
           ],
         },
@@ -114,11 +114,11 @@ module.exports = {
           items: [
             {
               label: 'Set Up the Config Manager',
-              to: 'docs/lumos/guides/config',
+              to: 'docs/tools/lumos/guides/config',
             },
 			{
               label: 'Set Up the Lumos Indexer',
-              to: 'docs/lumos/guides/indexer',
+              to: 'docs/tools/lumos/guides/indexer',
             },
           ],
         }
