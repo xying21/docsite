@@ -23,7 +23,9 @@ import Link from "@docusaurus/Link";
 
 - Capsule
 
-	Capsule is a development framework that creates smart contracts for the Layer 1 blockchain of Nervos' CKB. Capsule is designed to provide an out-of-the-box solution that helps developers accomplish common tasks swiftly and effortlessly.Capsule offers features including:
+	Capsule is a development framework that creates smart contracts for the Layer 1 blockchain of Nervos' CKB. Capsule is designed to provide an out-of-the-box solution that helps developers accomplish common tasks swiftly and effortlessly.
+
+	Capsule offers features including:
 
 	- Setting up footprints for new projects.
 	- Building RISC-V binaries for Nervos CKB-VM.
@@ -40,16 +42,16 @@ import Link from "@docusaurus/Link";
 
 	Tippy is a tool to help set up and manage CKB nodes, enabling the installation and launching of a CKB node with a simple click.
 
-	Scenario: 
+	Function:
 
 	- Install and launch CKB Node
 
 - Mercury 
 
 	Mercury is a tool that handles the development of applications on the CKB. Simply put, within the Nervos ecosystem, CKB is the Linux kernel and Mercury is Ubuntu. 
-	Mercury is the bridge between CKB and applications by providing useful RPC services for applications such as dApps built on Lumos as well as wallets and exchanges built on ckb-sdk.
+	Mercury is the bridge between CKB and applications by providing useful RPC services for applications such as dApps built on Lumos as well as wallets and exchanges built on `ckb-sdk`.
 
-	Scenarios
+	Function:
 
 	- on developing wallet applications: Mercury has interfaces for obtaining the balance of an address and for assembling transactions for transferring CKBytes, sUDT or xUDT.
 	- For exchanges: Mercury offers functions such as aggregating digital seets and fectching blocks. 
@@ -58,10 +60,19 @@ import Link from "@docusaurus/Link";
 
 	ckb-sdk is a collection of libraries that allow interactions with local or remote CKB nodes through the use of JSON-RPC. The SDK uses the NewCkbApi API to support the **CKB**, **CKB indexer** and **Mercury** module starting from 0.43.1 version. 
 
+	Function:
+
+	- Wallet management
+	- Account management
+	- Cryptocurrency management
+	- Communication with CKB networks
+	- Token management
+
 
 - Lumos
 
-	Lumos is an open-source framework that was developed by the Nervos Developer Tools team, for building Nervos CKB DApps, designed to simplify dApp development  on Nervos CKB. 
+	Lumos is an open-source framework that was developed by the Nervos Developer Tools team, for building Nervos CKB DApps, designed to simplify dApp development  on Nervos CKB. For more information, refer to [this link](https://xying21.github.io/lumos_doc/docs/preparation/setupsystem/)
+
 
 - Polyjuice
 
@@ -69,7 +80,7 @@ import Link from "@docusaurus/Link";
 
 - Godwoken
 
-	Godwoken is a layer 2 rollup framework that provides an abstracted account model and abstracted layer 2 transactions upon Nervos CKB.
+	Godwoken is a layer 2 rollup framework that provides an abstracted account model and abstracted layer 2 transactions upon Nervos CKB. For more information, visit [Godwoken Documentation](https://docs.godwoken.io)
 
 - Forcebridge
 
