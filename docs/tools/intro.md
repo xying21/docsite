@@ -23,7 +23,7 @@ import Link from "@docusaurus/Link";
 
 - Capsule
 
-	Capsule is a development framework that creates smart contracts for the Layer 1 blockchain of Nervos' CKB. Capsule is designed to provide an out-of-the-box solution that helps developers accomplish common tasks swiftly and effortlessly.
+	Capsule provides a solution to build CKB scripts using the Rust programming language. Capsule is a development framework that creates smart contracts for the Layer 1 blockchain of Nervos' CKB. It is designed to provide an out-of-the-box solution that helps developers accomplish common tasks swiftly and effortlessly, to help developers develop, build, test, debug, and also deploy the script.
 
 	Capsule offers features including:
 
@@ -71,7 +71,7 @@ import Link from "@docusaurus/Link";
 
 - Lumos
 
-	Lumos is an open-source framework that was developed by the Nervos Developer Tools team, for building Nervos CKB DApps, designed to simplify dApp development  on Nervos CKB. For more information, refer to [this link](https://xying21.github.io/lumos_doc/docs/preparation/setupsystem/)
+	Lumos is an open-source framework that was developed by the Nervos Developer Tools team, for building Nervos CKB DApps, designed to simplify dApp development on Nervos CKB. Lumos provides a JavaScript/TypeScript based framework, that can speed up dapp development significantly. For more information, refer to [Lumos](https://xying21.github.io/lumos_doc/docs/preparation/setupsystem/)
 
 
 - Polyjuice
@@ -84,4 +84,4 @@ import Link from "@docusaurus/Link";
 
 - Forcebridge
 
-	Force Bridge currently supports cross-chains in Bitcoin, Ethereum, Tron and Eos, and will support more blockchain projects in the future. Users can use Force Bridge Dapp to transfer assets from other chains to CKB to obtain the corresponding shadow assets, as well as to transfer the shadow assets back and obtain the native assets.
+	Force Bridge is an open source project that allows users to transfer whitelisted tokens from, say, the ethereum blockchain to the Nervos CKB blockchain through a series of smart contracts deployed on both chains. Force Bridge currently supports cross-chains in Bitcoin, Ethereum, Tron and Eos, and will support more blockchain projects in the future. Users can use Force Bridge Dapp to transfer assets from other chains to CKB to obtain the corresponding shadow assets, as well as to transfer the shadow assets back and obtain the native assets.
