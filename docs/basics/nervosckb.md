@@ -1,7 +1,7 @@
 ---
-id: intro
-title: Introduction
-sidebar_label: Introduction
+id: nervosckb
+title: Nervos CKB
+sidebar_label: Nervos CKB
 ---
 
 import useBaseUrl from "@docusaurus/useBaseUrl";

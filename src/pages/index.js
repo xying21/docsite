@@ -8,24 +8,24 @@ import styles from './styles.module.css';
 
 const features = [
   {
-    title: <>Core Concepts</>,
+    title: <>Basic Concepts and Knowledge</>,
     //imageUrl: 'img/getting-started.svg',
     description: (
       <>
-        The core concepts of Nervos CKB are the prerequisite knowledge for the development on Nervos CKB.
+        The basic concepts of Nervos CKB are the prerequisite knowledge for the development on Nervos CKB.
       </>
     ),
-    pageUrl: "docs/learn/ckb"
+    pageUrl: "docs/basics/nervosckb"
   },
   {
-    title: <>Development Stacks</>,
+    title: <>Guides for CKB Development Tools</>,
     //imageUrl: 'img/sdks-samples.svg',
     description: (
       <>
       The documentation includes the guides of the framework, SDKs, tools developed by Cryptape for developing applications on Nervos CKB.
       </>
     ),
-    pageUrl: "docs/tools"
+    pageUrl: "docs/tools/intro"
   },
 ];
 
@@ -60,7 +60,7 @@ function Home() {
   return (
     <Layout
       title="Home"
-      description="Add strong authentication, fine-grained authorization in your apps, devices, and APIs.">
+      description="Documentation Site for Developer Tools">
       <header className={classnames('hero hero--secondary', styles.heroBanner)}>
         <div className="container">
           <h1 className="hero__title">{siteConfig.title}</h1>
@@ -71,9 +71,17 @@ function Home() {
                 'button cta-btn button--outline button--primary button--lg',
                 styles.getStarted,
               )}
-              to={useBaseUrl('docs/basics/intro')}>
-              <i className="feather icon-arrow-right"></i> Get started
+              to={useBaseUrl('docs/basics/nervosckb')}>
+              <i className="feather icon-arrow-right"></i>Learn
             </Link>
+            <Link
+              className={classnames(
+                'button cta-btn button--outline button--primary button--lg',
+                styles.getStarted,
+              )}
+              to={useBaseUrl('docs/develop/getstarted')}>
+              <i className="feather icon-arrow-right"></i>Develop
+            </Link>			
           </div>
         </div>
       </header>
@@ -81,6 +89,7 @@ function Home() {
         {features && features.length && (
           <section className={styles.features}>
             <div className="container">
+			
               <div className="row">
                 {features.map((props, idx) => (
                   <Feature key={idx} {...props} />

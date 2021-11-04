@@ -7,6 +7,8 @@ import useBaseUrl from "@docusaurus/useBaseUrl";
 
 import Link from "@docusaurus/Link";
 
+Some useful tools and frameworks that include many of the needed features are provided for developing CKB applications. 
+
 - ckb-indexer
 
 	ckb-indexer is an indexer RPC service for ckb developers. This is a standalone service for creating cell and transaction indexes as an alternate solution. 

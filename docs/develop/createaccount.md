@@ -8,7 +8,7 @@ import Link from "@docusaurus/Link";
 
 CKB accounts can be created by using ckb-cli. DEV chain also provides two accounts from the genesis cells that were issued with a considerable amount of capacity. 
 
-You can create new accounts when developing your DApps by using the method demonstrated in this guide. 
+You can create new accounts when developing applications by using the method demonstrated in this guide. 
 
 ## Prerequisites 
 

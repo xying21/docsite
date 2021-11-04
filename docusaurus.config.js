@@ -34,7 +34,7 @@ module.exports = {
       theme: require('prism-react-renderer/themes/nightOwlLight'),
     },
     navbar: {
-		hideOnScroll: true,
+		hideOnScroll: false,
 		
 		
 		logo: {
@@ -47,7 +47,7 @@ module.exports = {
           //type: 'dropdown',
           label: 'Learn',
           position: 'right',
-		  to: 'docs/basics/intro',
+		  to: 'docs/basics/nervosckb',
 		  // items: [
             // {
               // label: 'What is CKB?',
@@ -55,26 +55,12 @@ module.exports = {
             // },
           // ],
         },
-		/* {
+		{
           //type: 'dropdown',
           label: 'Develop',
           position: 'right',
-		  to: 'docs/tools/intro',
-		  // items: [
-            // {
-              // label: 'Lumos',
-              // to: 'docs/lumos/introduction/intro',
-            // },
-			// {
-              // label: 'Godwoken',
-              // to: 'docs/godwoken/godwoken',
-            // },
-			// {
-              // label: 'CKB SDK',
-              // to: 'docs/sdk/overview_go',
-            // },
-          // ],
-        }, */
+		  to: 'docs/develop/getstarted',
+        }, 
         {to: 'blog', label: 'Blog', position: 'right'},
 		{
           label: 'Support',
@@ -85,44 +71,6 @@ module.exports = {
     },
     footer: {
       style: 'light',
-      links: [
-        {
-          title: 'About',
-          items: [
-
-            {
-              label: 'What is Lumos?',
-              to: 'docs/tools/lumos/introduction/intro',
-            },
-          ],
-        },
-        {
-          title: 'Setup',
-          items: [
-            {
-              label: 'Set Up the Development Environment',
-              to: 'docs/tools/lumos/preparation/setupsystem',
-            },
-            {
-              label: 'Install Lumos Packages',
-              to: 'docs/tools/lumos/guides/installlumos',
-            }
-          ],
-        },
-        {
-          title: 'Config',
-          items: [
-            {
-              label: 'Set Up the Config Manager',
-              to: 'docs/tools/lumos/guides/config',
-            },
-			{
-              label: 'Set Up the Lumos Indexer',
-              to: 'docs/tools/lumos/guides/indexer',
-            },
-          ],
-        }
-      ],
 	  logo: {
                 alt: 'Cryptapers',
                 src: 'img/whitecryptape.png',
