@@ -25,7 +25,9 @@ Some useful tools and frameworks that include many of the needed features are pr
 
 - Capsule
 
-	Capsule is a development framework that creates smart contracts for the Layer 1 blockchain of Nervos' CKB. Capsule is designed to provide an out-of-the-box solution that helps developers accomplish common tasks swiftly and effortlessly.Capsule offers features including:
+	Capsule provides a solution to build CKB scripts using the Rust programming language. Capsule is a development framework that creates smart contracts for the Layer 1 blockchain of Nervos' CKB. It is designed to provide an out-of-the-box solution that helps developers accomplish common tasks swiftly and effortlessly, to help developers develop, build, test, debug, and also deploy the script.
+
+	Capsule offers features including:
 
 	- Setting up footprints for new projects.
 	- Building RISC-V binaries for Nervos CKB-VM.
@@ -42,16 +44,16 @@ Some useful tools and frameworks that include many of the needed features are pr
 
 	Tippy is a tool to help set up and manage CKB nodes, enabling the installation and launching of a CKB node with a simple click.
 
-	Scenario: 
+	Function:
 
 	- Install and launch CKB Node
 
 - Mercury 
 
 	Mercury is a tool that handles the development of applications on the CKB. Simply put, within the Nervos ecosystem, CKB is the Linux kernel and Mercury is Ubuntu. 
-	Mercury is the bridge between CKB and applications by providing useful RPC services for applications such as dApps built on Lumos as well as wallets and exchanges built on ckb-sdk.
+	Mercury is the bridge between CKB and applications by providing useful RPC services for applications such as dApps built on Lumos as well as wallets and exchanges built on `ckb-sdk`.
 
-	Scenarios
+	Function:
 
 	- on developing wallet applications: Mercury has interfaces for obtaining the balance of an address and for assembling transactions for transferring CKBytes, sUDT or xUDT.
 	- For exchanges: Mercury offers functions such as aggregating digital seets and fectching blocks. 
@@ -60,10 +62,19 @@ Some useful tools and frameworks that include many of the needed features are pr
 
 	ckb-sdk is a collection of libraries that allow interactions with local or remote CKB nodes through the use of JSON-RPC. The SDK uses the NewCkbApi API to support the **CKB**, **CKB indexer** and **Mercury** module starting from 0.43.1 version. 
 
+	Function:
+
+	- Wallet management
+	- Account management
+	- Cryptocurrency management
+	- Communication with CKB networks
+	- Token management
+
 
 - Lumos
 
-	Lumos is an open-source framework that was developed by the Nervos Developer Tools team, for building Nervos CKB DApps, designed to simplify dApp development  on Nervos CKB. 
+	Lumos is an open-source framework that was developed by the Nervos Developer Tools team, for building Nervos CKB DApps, designed to simplify dApp development on Nervos CKB. Lumos provides a JavaScript/TypeScript based framework, that can speed up dapp development significantly. For more information, refer to [Lumos](https://xying21.github.io/lumos_doc/docs/preparation/setupsystem/)
+
 
 - Polyjuice
 
@@ -71,8 +82,8 @@ Some useful tools and frameworks that include many of the needed features are pr
 
 - Godwoken
 
-	Godwoken is a layer 2 rollup framework that provides an abstracted account model and abstracted layer 2 transactions upon Nervos CKB.
+	Godwoken is a layer 2 rollup framework that provides an abstracted account model and abstracted layer 2 transactions upon Nervos CKB. For more information, visit [Godwoken Documentation](https://docs.godwoken.io)
 
 - Forcebridge
 
-	Force Bridge currently supports cross-chains in Bitcoin, Ethereum, Tron and Eos, and will support more blockchain projects in the future. Users can use Force Bridge Dapp to transfer assets from other chains to CKB to obtain the corresponding shadow assets, as well as to transfer the shadow assets back and obtain the native assets.
+	Force Bridge is an open source project that allows users to transfer whitelisted tokens from, say, the ethereum blockchain to the Nervos CKB blockchain through a series of smart contracts deployed on both chains. Force Bridge currently supports cross-chains in Bitcoin, Ethereum, Tron and Eos, and will support more blockchain projects in the future. Users can use Force Bridge Dapp to transfer assets from other chains to CKB to obtain the corresponding shadow assets, as well as to transfer the shadow assets back and obtain the native assets.
