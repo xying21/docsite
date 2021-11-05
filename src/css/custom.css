@@ -1,0 +1,234 @@
+/* stylelint-disable docusaurus/copyright-header */
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+@import url("custom2.css");
+@import url("https://at-ui.github.io/feather-font/css/iconfont.css");
+/*:root {
+  --ifm-color-primary: #3578e5;
+  --ifm-color-primary-dark: rgb(29, 107, 225);
+  --ifm-color-primary-darker: rgb(27, 98, 212);
+  --ifm-color-primary-darkest: rgb(23, 81, 175);
+  --ifm-color-primary-light: rgb(78, 137, 232);
+  --ifm-color-primary-lighter: rgb(100, 145, 234);
+  --ifm-color-primary-lightest: rgb(128, 170, 239);
+  --ifm-code-font-size: 95%;
+}*/
+
+.docusaurus-highlight-code-line {
+  background-color: rgb(220, 220, 220);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+
+}
+.github-link:hover {
+    opacity: 0.6;
+}
+.github-link:before {
+  content: "";
+  margin-left: 14px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath  d='M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+html[data-theme='light'] .DocSearch {
+  /* --docsearch-primary-color: var(--ifm-color-primary); */
+  /* --docsearch-text-color: var(--ifm-font-color-base); */
+  --docsearch-muted-color: var(--ifm-color-secondary-darkest);
+  --docsearch-container-background: rgba(94, 100, 112, 0.7);
+  /* Modal */
+  --docsearch-modal-background: var(--ifm-color-secondary-lighter);
+  /* Search box */
+  --docsearch-searchbox-background: var(--ifm-color-secondary);
+  --docsearch-searchbox-focus-background: var(--ifm-color-white);
+  /* Hit */
+  --docsearch-hit-color: var(--ifm-font-color-base);
+  --docsearch-hit-active-color: var(--ifm-color-white);
+  --docsearch-hit-background: var(--ifm-color-white);
+  /* Footer */
+  --docsearch-footer-background: var(--ifm-color-white);
+}
+.masthead {
+  min-height: 500px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: var(--ifm-container-width);
+    width: 100%;
+ /*background-color: var(--ifm-color-primary-dark);*/
+    margin-left: auto;
+    margin-right: auto;
+/*   background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+  background-size: cover; */
+
+}
+.masterhead > .row {
+	display: flex;
+    flex-direction: row;
+	flex-wrap: wrap;
+	margin-left: calc(var(--ifm-spacing-horizontal)*-1);
+	margin-right: calc(var(--ifm-spacing-horizontal)*-1);
+	
+}
+.masthead >.row > div {
+  order: -1;
+  height: 3em;
+  margin-top: 80px;
+  
+}
+.masthead > .row > .col >.content > div  {
+  order: -1;
+  height: 3em;
+  margin: 0 !important;
+  text-align: right;
+    display: flex;
+  flex-direction: column;
+}
+.masthead > .row > .col {
+	display: block;
+    flex: 1 0;
+    margin-left: 0;
+	height: 200px;
+    max-width: 100%;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 8px;
+    text-align: left;
+}
+
+.masthead > .row > .col > object {
+	border-style: none;
+    box-sizing: content-box;
+    max-width: 100%;
+	margin-block-start: 5em;
+	align-content: center;
+}
+
+.masthead > .row > .col > h1 {
+    /* color: rgb(0, 0, 0); */
+    /* font-weight: bold; */
+    max-width: 25em;
+    font-family: Kanit,sans-serif;
+    color: #4c4c4c;
+    font-size: 2.8em;
+    line-height: 1.2em;
+    font-weight: 300;
+    text-align: left;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+	margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 5px;
+    margin-inline-end: 5px;
+	
+  }
+.masthead > .row > .col > h3 {
+    font-weight: normal;
+    font-size: 28px;
+    font-family: Arial;
+    color: #4c4c4c;
+    text-align: left;
+    margin-bottom: 50px;
+	margin-top: 30px;
+	line-height: 1.2em;
+	max-width: 20em;
+	margin-block-start: 1.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 5px;
+    margin-inline-end: 5px;
+  }
+.masthead > .row > .col > .button--lg {
+    background-color: #fff;
+    color: var(--ifm-color-primary);
+	--ifm-button-size-multiplier: 1.35;
+	   align: center;
+}
+.masthead > .row > .col >.button--outline {
+    --ifm-button-background-color: transparent;
+    --ifm-button-color: var(--ifm-button-border-color);
+}
+.masthead > .row > .col >.button:hover {
+   color:var(--ifm-color-primary-darker);
+
+}
+.masthead > .row > .col  >.h2__title {
+    background-size: 110%;
+    color: transparent;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    height: 280px;
+}
+ol {
+  border-left: 1px solid var(--ifm-hr-border-color);
+  counter-reset: sections-counter;
+  list-style: none;
+  margin-left: 1em;
+  padding-left: 1.75em;
+}
+ol>li {
+  counter-increment: sections-counter;
+  margin-bottom: 0;
+}
+ol > li:before {
+    margin: .2em 0 0 -2.2em;
+    border-radius: 100%;
+    content: counter(sections-counter);
+    float: left;
+    font-size: 1.25em;
+    font-weight: 700;
+    line-height: 1;
+    min-width: 1em;
+    padding: .2em;
+    text-align: center;
+    color: #fff;
+    background: #c6c6c6;
+}
+
+.feather {
+    font-family: 'feather' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-download:before {
+    content: "\e864";
+}
+.footer__links {
+    width: 75%;
+    float: right;
+}
+.footer__bottom {
+    width: 100%;
+}
+.footer__bottom > div {
+    text-align: center;
+}
+.footer--dark {
+    --ifm-footer-background-color: #20232a;
+    --ifm-footer-padding-vertical: 85px;
+}
+.footer__copyright {
+    font-size: .9em;
+    text-align: center;
+}
+.DocSearch-Button-Key {
+  display: none !important;
+}
