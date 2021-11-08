@@ -9,8 +9,8 @@ module.exports = {
   organizationName: 'xying21', // Usually your GitHub org/user name.
   projectName: 'docsite', // Usually your repo name.
 
-  plugins: ['docusaurus-plugin-sass' ],
-  
+  plugins: ['docusaurus-plugin-sass'],
+   
   themeConfig: {
     colorMode: {
       defaultMode: 'light',
