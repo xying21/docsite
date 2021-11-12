@@ -1,14 +1,49 @@
 ---
 id: tutorial-zero2ckb-basic
-title: Basic Practices
+title: Chain Information
 ---
-import useBaseUrl from "@docusaurus/useBaseUrl";
+import Wallets from '../../src/components/Wallets';
 
-import Link from "@docusaurus/Link";
+import FetchNewBlocks from '../../src/components/newblocks';
 
-import ShowChainInfo from "../../src/pages/show_chain_info/ShowChainInfo";
+import FetchConfig from '../../src/components/fetchConfig';
 
-<ShowChainInfo/>
+This tutorial shows the following information of a CKB chain that was deployed in cloud.
 
+- The latest 8 blocks of the chain.
+- The wallets information.
+- The cells and transactions of each wallet.
+- The configuration information of the chain.
 
+## Fetch the Latest Blocks Information
 
+<FetchNewBlocks/>
+
+## View Wallets Information
+
+Each wallet includes the following information:
+
+- `mainnet`: The mainnet address of the wallet.
+- `testnet`: The testnet address of the wallet. Only testnet address is used in this tutorial.
+- `lock_arg`: The first 20 bytes of the corresponding public key hash.
+- `private_key`: The private key of the wallet.
+
+:::note
+
+The wallet information shown in this tutorial is only used in the later sections for demonstration like deploying contracts,  sending transactions. Do not use the private keys, addresses and args elsewhere.
+
+:::
+
+ <Wallets ></Wallets >
+
+Each CKB chain has several embeded smart contracts in genesis blocks when the chain is installed or deployed.
+
+The following shows the three embeded smart contracts.
+
+`prefix: ckt` This is a testnet chain.
+
+`scripts` The smart contracts embeded in the chain, i.e. the type and lock scripts.
+
+- SECP256K1_BLAKE160: The default lock script that is used to protect the ownership of cells.
+- SECP256K1_BLAKE160_MULTISIG: The multisig version of SECP256K1_BLAKE160.
+- DAO: The smart contract for Nervos DAO.

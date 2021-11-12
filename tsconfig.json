@@ -1,0 +1,10 @@
+{
+  "extends": "@tsconfig/docusaurus/tsconfig.json",
+  "compilerOptions": {
+    "types": ["node",  "@docusaurus/module-type-aliases"],
+    "resolveJsonModule": true
+  },
+  
+  "include": ["src/"],
+  "exclude": ["node_modules"]
+}

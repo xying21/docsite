@@ -18,23 +18,22 @@ import Link from "@docusaurus/Link";
 
   For more information, see the [Linux command line for beginner](https://ubuntu.com/tutorials/command-line-for-beginners).
 
-## Set Up Development Environment
+## System Requirements
 
-These are the minimum requirements for any application development and testing on Nervos CKB.
+The following platforms are supported.
 
-- OS: MacOS, Ubuntu Linux, or Windows 10 + WSL2 (Ubuntu)
+- Linux
+- Windows + WSL2 (Ubuntu)
+- macOS
 
-- IDE: [CKB Studio](https://www.obsidians.io/) or your favorite IDE
+## Preparation
 
-- A CKB node installed on DEV chain for testing smart contracts and DApps.
+A CKB node installed on DEV chain and CKB accounts are the minimum requirements for any application development and testing on Nervos CKB.
 
-  For more information, see <Link to={useBaseUrl('/docs/develop/installnode')}>Install a CKB Node</Link>.
+- <Link to={useBaseUrl('/docs/develop/installnode')}>Install a CKB Node</Link>.
+- <Link to={useBaseUrl('/docs/develop/createaccount')}>Create CKB Accounts</Link>.
 
-- CKB accounts for the development.
-
-  For more information, see <Link to={useBaseUrl('/docs/develop/createaccount')}>Create Accounts</Link>.
-
-## Pick Developer Tools and Install Development Stacks
+## Pick Developer Tools and Set Up Development Stacks
 
 The following is a mind map to show the usage of CKB developer tools. Sometimes several tools can be used in combination for an application development.
 
@@ -50,5 +49,5 @@ The following are recommended software stacks for application development on Ner
 
 ## Program Application Functions
 
-Follow along with the **Tutorials** to get started with some basic usage of the CKB developer tools.
+Follow along with the **Tutorials** to understand CKB basic knowledge such as CKB data structure, and get started with some basic usage of the CKB developer tools.
 

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" height="40pt" width="137.0967741935484pt" viewBox="785 227 145.0967741935484 46" ><defs><style type="text/css">
+            @font-face {
+                font-family: 'lt_regular';
+                src: url('https://app.creately.com/diagram/assets/fonts/lato/lt-regular-webfont.woff2') format('woff2'),
+                    url('https://app.creately.com/diagram/assets/fonts/lato/lt-regular-webfont.woff') format('woff');
+                font-weight: normal;
+                font-style: normal;
+            }
+            @font-face {
+                font-family: 'noto_regular';
+                src: url('https://app.creately.com/diagram/assets/fonts/noto/noto-regular.woff') format('woff'),
+                     url('https://app.creately.com/diagram/assets/fonts/noto/noto-regular.woff2') format('woff2');
+                font-weight: normal;
+                font-style: normal;
+            }
+        p {
+            margin: 0;
+        }
+        .fade-in:hover {
+			opacity: 1	
+		}
+        </style></defs><defs><style>
+            span{ display: inline-block; }
+        </style></defs><g class="fade-in"  opacity="0.8" id="PGNRXHlLI1n"><g transform="translate(790 230)"><path d="M 19.999999999999996,39.99999999999999 L 19.999999999999996,39.99999999999999 L 19.999999999999996,39.99999999999999 A 19.999999999999996 19.999999999999996 0 0 1 0 20 L 0,19.999999999999996 L 0,20 A 19.999999999999996 19.999999999999996 0 0 1 19.999999999999996 0 L 117.09677419354841,0 L 117.09677419354841,0 L 117.09677419354841,0 A 19.999999999999996 19.999999999999996 0 0 1 137.0967741935484 19.999999999999996 L 137.0967741935484,19.999999999999996 L 137.0967741935484,19.999999999999996 A 19.999999999999996 19.999999999999996 0 0 1 117.09677419354841 39.99999999999999 L 19.999999999999996,39.99999999999999 Z" fill="rgb(131,196,220)" stroke="#2F8CAE" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0 0"/></g><g transform="translate(821.1483870967742, 241) rotate(0, 37.4, 9)" width="74.8" height="18"><text text-decoration="none" x="0.001562499999998579" fill="#ffffff" font-weight="bold" font-size="10pt" font-family="lt_regular"  y="14">Fetch&#160;</text><text text-decoration="none" x="36.5796875" fill="#ffffff" font-weight="bold" font-size="10pt" font-family="lt_regular"  y="14">Blocks</text><text text-decoration="none" x="74.7984375" fill="#4b4b4b" font-size="10pt" font-family="noto_regular"  y="14"></text></g></g></svg>
