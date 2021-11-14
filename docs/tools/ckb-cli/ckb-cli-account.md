@@ -42,7 +42,7 @@ SUBCOMMANDS:
                         [1]: https://github.com/nervosnetwork/ckb-system-scripts/blob/master/c/secp256k1_blake160_sighash_all.c
                         [2]: https://github.com/obsidiansystems/ckb-plugin-ledger
     new                 Create a new account and print related information.
-    import              Import an unencrypted private key from <privkey-path> and create a new account.
+    import              Import an unencrypted private key from `<privkey-path>` and create a new account.
     import-from-plugin  Import an account from keystore plugin
     import-keystore     Import key from encrypted keystore json file and create a new account.
     update              Update password of an account
@@ -57,17 +57,20 @@ SUBCOMMANDS:
 
 ## <code>account</code> Subcommands
 
-|方法|描述|
+|command|description|
 |---|---|
-|[list](#list)                |账户列表|
-|[new](#new)                 |创建一个新帐户并打印相关信息|
-|[import](#import)              |导入 `<privkey-path>` 未加密的私钥并创建一个新帐户|
+|[list](#list)                |Show accounts list|
+|[new](#new)                 |Creat a new account and print the relevant information|
+|[import](#import)              |Import `<privkey-path>` 未加密的私钥并创建一个新帐户|
+|[import-from-plugin]           |Import an account from keystore plugin|
 |[import-keystore](#import-keystore)     |从加密的 keystore json 文件导入密钥，并创建一个新帐户|
 |[unlock](#unlock)              |解锁账户|
 |[update](#update)              |更新账户密码|
+|[upgrade]                      |Upgrade an account to latest json format|
 |[export](#export)              |导出主私钥和链码为十六进制纯文本(由自己承担风险)|
 |[bip44-addresses](#bip44-addresses)     |扩展接收/更改地址(见BIP-44)|
 |[extended-address](#extended-address)    |扩展地址(见BIP-44)|
+|[remove]                       |Print information about how to remove an account|
 
 ---
 
