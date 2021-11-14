@@ -5,7 +5,7 @@ title: Account Management
 
 ## Available Commands
 
-使用 `--help` 命令，查看可用命令
+Use `--help` to view the available commands
 
 ```shell
 # account help doc
@@ -242,7 +242,7 @@ status: success
 
 ### `export`
 
-通过 `lock arg`，导出私钥
+Export privkey with `lock arg`
 
 > Usage：`ckb-cli account export [FLAGS] [OPTIONS] --extended-privkey-path <extended-privkey-path> --lock-arg <lock-arg>`
 
