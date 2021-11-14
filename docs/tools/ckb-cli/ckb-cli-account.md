@@ -193,26 +193,27 @@ request：
 ---
 
 ---
+
 ### `update`
 
-更新账户密码
+Update password of an account
 
-> 用法：`ckb-cli account update --lock-arg <lock-arg>`
+> Usage：`ckb-cli account update --lock-arg <lock-arg>`
 
 request：
-```
+```shell
 ckb-cli account update --lock-arg 0xc4841b76021839360b4b
 bea51a290150b268abab
 ```
 
 response：
+
 ```shell
 Old password: # enter the old password
 New password:  # enter the new password
 Repeat password:  # re-enter the new password
 status: success
 ```
-
 ---
 
 ### `export`
