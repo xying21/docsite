@@ -170,7 +170,7 @@ lock_arg: 3b73c9ee1bc86f7a6a30965470547c17016af4a7
 Import an account from keystore plugin
 
 > Usage: `account import-from-plugin --account-id <account-id>` 
-#The account id(hex format, can be found in account list)
+  #The account id, in hex format, can be found in account list
 
 request:
 ```shell
