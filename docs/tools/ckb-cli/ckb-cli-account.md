@@ -13,7 +13,7 @@ ckb-cli account --help
 ```
 
 <details>
-<summary>点击查看详细输出</summary>
+<summary>Click to view detailed output</summary>
 
 ```
 Manage accounts
@@ -43,9 +43,9 @@ SUBCOMMANDS:
                         by `ckb-cli account import-from-plugin` the output fields are just like "Local File System". 
                         If the account is not imported, the output fields are:
                        * account-id: The account id used to import the account metadata from plugin.
-            
                         [1]: https://github.com/nervosnetwork/ckb-system-scripts/blob/master/c/secp256k1_blake160_sighash_all.c
                         [2]: https://github.com/obsidiansystems/ckb-plugin-ledger
+
     new                 Create a new account and print related information.
     import              Import an unencrypted private key from `<privkey-path>` and create a new account.
     import-from-plugin  Import an account from keystore plugin
@@ -66,22 +66,21 @@ SUBCOMMANDS:
 |---|---|
 |[list](#list)                |Show accounts list|
 |[new](#new)                 |Creat a new account and print the relevant information|
-|[import](#import)              |Import `<privkey-path>` 未加密的私钥并创建一个新帐户|
+|[import](#import)              |Import an unencrypted private key from `<privkey-path>` and create a new account|
 |[import-from-plugin]           |Import an account from keystore plugin|
-|[import-keystore](#import-keystore)     |从加密的 keystore json 文件导入密钥，并创建一个新帐户|
-|[unlock](#unlock)              |解锁账户|
-|[update](#update)              |更新账户密码|
+|[import-keystore](#import-keystore)     |Import key from encrypted keystore json file and create a new account.|
+|[update](#update)              |Update password of an account|
 |[upgrade]                      |Upgrade an account to latest json format|
-|[export](#export)              |导出主私钥和链码为十六进制纯文本(由自己承担风险)|
-|[bip44-addresses](#bip44-addresses)     |扩展接收/更改地址(见BIP-44)|
-|[extended-address](#extended-address)    |扩展地址(见BIP-44)|
+|[export](#export)              |Export master private key and chain code as hex plain text (USE WITH YOUR OWN RISK)|
+|[bip44-addresses](#bip44-addresses)     |Extended receiving/change Addresses (see: BIP-44)|
+|[extended-address](#extended-address)    |Extended address (see: BIP-44)|
 |[remove]                       |Print information about how to remove an account|
 
 ---
 
 ### `list`
 
-显示账户列表
+Display the list of accounts
 
 > 用法：`ckb-cli account list [FLAGS] [OPTIONS]`
 
@@ -90,7 +89,7 @@ ckb-cli account list --output-format json
 ```
 
 <details>
-<summary>点击查看详细输出</summary>
+<summary>Click for detailed output</summary>
 
 ```json
 [
@@ -121,20 +120,20 @@ ckb-cli account list --output-format json
 
 ### `new`
 
-生成一个新的地址
+Generate a new address
 
 > 用法：`ckb-cli account new [FLAGS] [OPTIONS]`
 
-请求：
+request：
 ```shell
 ckb-cli account new
 
 Your new account is locked with a password. Please give a password. Do not forget this password.
-Password: # 输入密码
-Repeat password: # 再次输入相同密码
+Password: # type your own password
+Repeat password: # retype the password you just entered
 ```
 
-响应：
+response：
 ```
 address:
   mainnet: ckb1qyqgxjh9jk4fyxy3mu9g4p5nvgnmvj8h8lmqh70qkn
@@ -146,17 +145,17 @@ lock_hash: 0x90b367c3086ad34412d795081c9be789973680ffc2586c0b56f3330aa9d8851e
 ---
 ### `import`
 
-导入 `<privkey-path>` 路径下未加密的私钥，并创建一个新帐户
+Import an unencrypted private key from `<privkey-path>` and create a new account
 
-> 用法：`ckb-cli account import --extended-privkey-path <extended-privkey-path> --output-format <output-format> --privkey-path <privkey-path>`
+> Usage：`ckb-cli account import --extended-privkey-path <extended-privkey-path> --output-format <output-format> --privkey-path <privkey-path>`
 
-请求：
+request：
 ```
 ckb-cli account import --privkey-path wallet1
 ```
 * wallet1 文件中为一段 256bit 的随机数
 
-响应：
+response：
 ```shell
 Password: # 输入密码
 Repeat password: # 再次输入密码
@@ -165,45 +164,53 @@ address:
   testnet: ckt1qyqrku7facdusmm6dgcfv4rs237pwqt27jnspvmm4z
 lock_arg: 3b73c9ee1bc86f7a6a30965470547c17016af4a7
 ```
+---
+### `import-from-plugin`
+
+Import an account from keystore plugin
+
+> Usage: `account import-from-plugin --account-id <account-id>` 
+# The account id(hex format, can be found in account list)
+
+request:
+```
+ckb-cli account import-from-plugin --account-id 
+
+reponse:
+
+---
 
 ---
 ### `import-keystore`
 
 从加密的 keystore json 文件导入密钥，并创建一个新帐户
 
-> 用法：`ckb-cli account import-keystore --output-format <output-format> --path <path>`
+> Usage：`ckb-cli account import-keystore --path <path>`
 
-请求：
+request：
 
-响应：
 
 ---
-### `unlock`
-
-解锁账户
-
-> 用法：`ckb-cli account unlock --keep <keep> --lock-arg <lock-arg> --output-format <output-format>`
-
 
 ---
 ### `update`
 
 更新账户密码
 
-> 用法：`ckb-cli account update --lock-arg <lock-arg> --output-format <output-format>`
+> 用法：`ckb-cli account update --lock-arg <lock-arg>`
 
-请求：
+request：
 ```
 ckb-cli account update --lock-arg 0xc4841b76021839360b4b
 bea51a290150b268abab
 ```
 
-响应：
+response：
 ```shell
-Old password: # 输入旧密码
-New password:  # 输入新密码
-Repeat password:  # 再次输入新密码
-success
+Old password: # enter the old password
+New password:  # enter the new password
+Repeat password:  # re-enter the new password
+status: success
 ```
 
 ---
