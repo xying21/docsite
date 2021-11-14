@@ -221,6 +221,25 @@ status: success
 ```
 ---
 
+### `upgrade`
+
+Upgrade an account to latest json format
+
+> Usage: `account upgrade --lock-arg <lock-arg>`
+
+request:
+```shell
+ckb-cli account upgrade --lock-arg 0x7ec842a42136c2508a9bad1a1cee1763af166ed8
+```
+
+output:
+```shell
+Password: #enter the password
+status: success
+```
+
+---
+
 ### `export`
 
 通过 `lock arg`，导出私钥
