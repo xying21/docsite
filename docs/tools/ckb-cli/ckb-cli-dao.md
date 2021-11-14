@@ -7,9 +7,31 @@ title: Nervos DAO Operations
 
 |Method|Description|
 |---|---|
-|deposit                  |将 CKB 存入 NervosDAO|
-|prepare                  |将 NervosDAO 中指定的 cells 转变为待取出状态|
-|withdraw                 |从 NervosDAO 中取出指定的 cells |
-|query-deposited-cells    |通过 lock script hash 或者地址，查询在 NervosDAO 中存入的 CKB 数量|
-|query-prepared-cells     |通过 lock script hash 或者地址，查询在 NervosDAO 中处于待取出状态的 CKB 数量 |
+|deposit                  |deposit ckb capacity into NervosDAO|
+|prepare                  |prepare specified cells from NervosDAO|
+|withdraw                 |Withdraw specified cells from NervosDAO |
+|query-deposited-cells    |Query NervosDAO deposited capacity by lock script hash or address|
+|query-prepared-cells     |Query NervosDAO prepared capacity by lock script hash or address |
 ---
+
+### `deposit`
+
+Deposit CKB capacity into NervosDAO
+
+> Usage: dao deposit [OPTIONS] --tx-fee <tx-fee> --capacity <capacity> 
+
+request:
+```shell
+ckb-cli dao deposit [OPTIONS] --tx-fee <tx-fee> --capacity <capacity> --privkey-path <privkey-path>
+```
+
+output:
+```shell
+
+```
+
+### `prepare`
+
+Prepare specified cells from NervosDAO
+
+>Usage: 
