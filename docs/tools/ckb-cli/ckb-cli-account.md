@@ -82,7 +82,7 @@ SUBCOMMANDS:
 
 Display the list of accounts
 
-> 用法：`ckb-cli account list [FLAGS] [OPTIONS]`
+> Usage：`ckb-cli account list [FLAGS] [OPTIONS]`
 
 ```shell
 ckb-cli account list --output-format json
@@ -122,7 +122,7 @@ ckb-cli account list --output-format json
 
 Generate a new address
 
-> 用法：`ckb-cli account new [FLAGS] [OPTIONS]`
+> Usage：`ckb-cli account new [FLAGS] [OPTIONS]`
 
 request：
 ```shell
@@ -133,7 +133,7 @@ Password: # type your own password
 Repeat password: # retype the password you just entered
 ```
 
-response：
+output：
 ```
 address:
   mainnet: ckb1qyqgxjh9jk4fyxy3mu9g4p5nvgnmvj8h8lmqh70qkn
@@ -155,10 +155,10 @@ ckb-cli account import --privkey-path wallet1
 ```
 * wallet1 文件中为一段 256bit 的随机数
 
-response：
+output：
 ```shell
-Password: # 输入密码
-Repeat password: # 再次输入密码
+Password: # enter the password
+Repeat password: # re-enter the password
 address:
   mainnet: ckb1qyqrku7facdusmm6dgcfv4rs237pwqt27jnsuf9ye7
   testnet: ckt1qyqrku7facdusmm6dgcfv4rs237pwqt27jnspvmm4z
@@ -177,7 +177,7 @@ request:
 ckb-cli account import-from-plugin --account-id 
 ```
 
-reponse:
+output:
 ```shell
 
 ```
@@ -189,9 +189,14 @@ reponse:
 > Usage：`ckb-cli account import-keystore --path <path>`
 
 request：
+```shell
 
+```
 
----
+output:
+```shell
+
+```
 
 ---
 
@@ -207,8 +212,7 @@ ckb-cli account update --lock-arg 0xc4841b76021839360b4b
 bea51a290150b268abab
 ```
 
-response：
-
+output：
 ```shell
 Old password: # enter the old password
 New password:  # enter the new password
@@ -221,12 +225,12 @@ status: success
 
 通过 `lock arg`，导出私钥
 
-> 用法：`ckb-cli account export [FLAGS] [OPTIONS] --extended-privkey-path <extended-privkey-path> --lock-arg <lock-arg>`
+> Usage：`ckb-cli account export [FLAGS] [OPTIONS] --extended-privkey-path <extended-privkey-path> --lock-arg <lock-arg>`
 
 - `--extended-privkey-path` 后跟导出的文件位置和文件名
 - `--lock-arg 0x834ae5...` 导出 lock-arg 对应值的私钥
 
-请求：
+request：
 ```shell
 ckb-cli account export --extended-privkey-path wallet --lock-arg 0x834ae595aa921891df0a8a86936227b648f73ff6 # 导出私钥到当前路径的 wallet 文件
 # 输入密码
@@ -234,7 +238,7 @@ Password:
 Success exported account as extended privkey to: "wallet", please use this file carefully
 ```
 
-响应：
+output：
 ```shell
 cat wallet #使用 cat 命令查看文本，其中第 1 行为私钥
 
@@ -245,13 +249,27 @@ a353ac6cf05bef04be186ad788a4512081c32f501a59810927398c6e448ff00c
 
 ### `bip44-addresses`
 
-> 用法：`ckb-cli account bip44-addresses --change-length <change-length> --from-change-index <from-change-index> --from-receiving-index <from-receiving-index> --lock-arg <lock-arg> --output-format <output-format> --receiving-length <receiving-length>`
+> Usage：`ckb-cli account bip44-addresses --change-length <change-length> --from-change-index <from-change-index> --from-receiving-index <from-receiving-index> --lock-arg <lock-arg> --output-format <output-format> --receiving-length <receiving-length>`
 
 ---
 
 ### `extended-address`
 
-> 用法：` ckb-cli account extended-address --lock-arg <lock-arg> --output-format <output-format>`
+> Usage：` ckb-cli account extended-address --lock-arg <lock-arg> --path <path> `
+
+request:
+```shell
+ckb-cli account extended-address --lock-arg 0x7ex842a42136c2508a9bad1a1cee1763af166ed8
+```
+
+output:
+```shell
+Password: # enter the password
+address:
+  mainnet: ckb1qyq8ajzz5ssndsjs32d66xsuactk8tckdmvq32fkcx
+  testnet: ckt1qyq8ajzz5ssndsjs32d66xsuactk8tckdmvqv0hf56
+lock_arg: 0x7ec842a42136c2508a9bad1a1cee1763af166ed8
+```
 
 
 
