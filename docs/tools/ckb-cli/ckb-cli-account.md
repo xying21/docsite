@@ -173,13 +173,14 @@ Import an account from keystore plugin
 # The account id(hex format, can be found in account list)
 
 request:
-```
+```shell
 ckb-cli account import-from-plugin --account-id 
+```
 
 reponse:
+```shell
 
----
-
+```
 ---
 ### `import-keystore`
 
