@@ -34,7 +34,8 @@ SUBCOMMANDS:
                         When `source` is "Local File System" means the account is stored in json keystore file, the output fields are:
                        * lock_arg: The blake2b160 hash of the public key.
                        * lock_hash: The lock script hash of secp256k1_blake160_sighash_all lock (See [1]).
-                       * has_ckb_pubkey_derivation_root_path: The ckb publick key derivation root path (m/44'/309'/0') is stored so that password is not required to do public key derivation.
+                       * has_ckb_pubkey_derivation_root_path: The ckb publick key derivation root path (m/44'/309'/0') 
+                       is stored so that password is not required to do public key derivation.
                        * address: The Mainnet/Testnet addresses of secp256k1_blake160_sighash_all lock (See [1]).
                         When `source` is "[plugin]: xxx_keysotre_plugin" means the account is stored in keystore plugin (Ledger plugin like [2]). 
                         If the account metadata is imported by `ckb-cli account import-from-plugin` the output fields are just like "Local File System". 
