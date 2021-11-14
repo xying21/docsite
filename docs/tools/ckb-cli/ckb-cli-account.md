@@ -153,7 +153,7 @@ request：
 ```
 ckb-cli account import --privkey-path wallet1
 ```
-* wallet1 文件中为一段 256bit 的随机数
+* wallet1 file contains a 256bit random number
 
 output：
 ```shell
@@ -184,7 +184,7 @@ output:
 ---
 ### `import-keystore`
 
-从加密的 keystore json 文件导入密钥，并创建一个新帐户
+Import the privkey from a encrypted keystore json file, and creat a new account.
 
 > Usage：`ckb-cli account import-keystore --path <path>`
 
@@ -246,20 +246,20 @@ Export privkey with `lock arg`
 
 > Usage：`ckb-cli account export [FLAGS] [OPTIONS] --extended-privkey-path <extended-privkey-path> --lock-arg <lock-arg>`
 
-- `--extended-privkey-path` 后跟导出的文件位置和文件名
-- `--lock-arg 0x834ae5...` 导出 lock-arg 对应值的私钥
+- `--extended-privkey-path` followed by the filename and directory of the exported file
+- `--lock-arg 0x834ae5...` export the privkey that corresponds to the `lock-arg` value
 
 request：
 ```shell
-ckb-cli account export --extended-privkey-path wallet --lock-arg 0x834ae595aa921891df0a8a86936227b648f73ff6 # 导出私钥到当前路径的 wallet 文件
-# 输入密码
+ckb-cli account export --extended-privkey-path wallet --lock-arg 0x834ae595aa921891df0a8a86936227b648f73ff6 # export the privkey to the wallet file ot the current directory
+# enter the password
 Password:
 Success exported account as extended privkey to: "wallet", please use this file carefully
 ```
 
 output：
 ```shell
-cat wallet #使用 cat 命令查看文本，其中第 1 行为私钥
+cat wallet #use cat command to check the text, where line 1 is the privkey
 
 97de6c08b3dd8f859d9fc1efed4301b0c05b6839ac3a097b80bfcfd7108e9fc6
 a353ac6cf05bef04be186ad788a4512081c32f501a59810927398c6e448ff00c
