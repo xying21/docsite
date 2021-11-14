@@ -22,26 +22,35 @@ USAGE:
     ckb-cli account [FLAGS] [OPTIONS] [SUBCOMMAND]
 
 FLAGS:
-        --no-color         Do not highlight(color) output json
+        --no-color         Do not hightlight(color) output json
         --debug            Display request parameters
-        --wait-for-sync    Ensure the index-store synchronizes completely before command being executed
+        --wait-for-sync    Ensure the index-store sybchronizes completely before command being excuted
     -h, --help             Prints help information
     -V, --version          Prints version information
 
-OPTIONS:
-        --output-format <output-format>    Select output format [default: yaml]  [possible values: yaml,
-                                           json]
 
 SUBCOMMANDS:
-    list                List all accounts
+    list                List all accounts. There are two kinds of account item indicated by `source` field:
+                        When `source` is "Local File System" means the account is stored in json keystore file, the output fields are:
+                       * lock_arg: The blake2b160 hash of the public key.
+                       * lock_hash: The lock script hash of secp256k1_blake160_sighash_all lock (See [1]).
+                       * has_ckb_pubkey_derivation_root_path: The ckb publick key derivation root path (m/44'/309'/0') is stored so that password is not required to do public key derivation.
+                       * address: The Mainnet/Testnet addresses of secp256k1_blake160_sighash_all lock (See [1]).
+                        When `source` is "[plugin]: xxx_keysotre_plugin" means the account is stored in keystore plugin (Ledger plugin like [2]). If the account metadata is imported by `ckb-cli account import-from-plugin` the output fields are just like "Local File System". If the account is not imported, the output fields are:
+                       * account-id: The account id used to import the account metadata from plugin.
+            
+                        [1]: https://github.com/nervosnetwork/ckb-system-scripts/blob/master/c/secp256k1_blake160_sighash_all.c
+                        [2]: https://github.com/obsidiansystems/ckb-plugin-ledger
     new                 Create a new account and print related information.
     import              Import an unencrypted private key from <privkey-path> and create a new account.
+    import-from-plugin  Import an account from keystore plugin
     import-keystore     Import key from encrypted keystore json file and create a new account.
-    unlock              Unlock an account
     update              Update password of an account
+    upgrade             Upgrade an account to latest json format
     export              Export master private key and chain code as hex plain text (USE WITH YOUR OWN RISK)
     bip44-addresses     Extended receiving/change Addresses (see: BIP-44)
     extended-address    Extended address (see: BIP-44)
+    remove              Print information about how to remove an account
     help                Prints this message or the help of the given subcommand(s)
 ```
 </details>
