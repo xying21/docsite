@@ -67,14 +67,14 @@ SUBCOMMANDS:
 |[list](#list)                |Show accounts list|
 |[new](#new)                 |Creat a new account and print the relevant information|
 |[import](#import)              |Import an unencrypted private key from `<privkey-path>` and create a new account|
-|[import-from-plugin]           |Import an account from keystore plugin|
+|[import-from-plugin](#import-from-plugin)           |Import an account from keystore plugin|
 |[import-keystore](#import-keystore)     |Import key from encrypted keystore json file and create a new account.|
 |[update](#update)              |Update password of an account|
-|[upgrade]                      |Upgrade an account to latest json format|
+|[upgrade](#upgrade)                     |Upgrade an account to latest json format|
 |[export](#export)              |Export master private key and chain code as hex plain text (USE WITH YOUR OWN RISK)|
 |[bip44-addresses](#bip44-addresses)     |Extended receiving/change Addresses (see: BIP-44)|
 |[extended-address](#extended-address)    |Extended address (see: BIP-44)|
-|[remove]                       |Print information about how to remove an account|
+|[remove](#remove)                       |Print information about how to remove an account|
 
 ---
 
